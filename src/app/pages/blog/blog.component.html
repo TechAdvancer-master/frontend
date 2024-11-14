@@ -1,0 +1,8 @@
+<h1>Blog</h1>
+<div *ngIf="loading">Loading posts...</div>
+<div *ngIf="!loading">
+  <div *ngFor="let post of posts">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+  </div>
+</div>

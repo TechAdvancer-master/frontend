@@ -1,0 +1,9 @@
+<section id="solutions">
+  <h2>Welcome to {{ companyName }}</h2>
+
+  <ng-template #cardtemplate let-item>
+    <app-card-service [service]="item"></app-card-service>
+  </ng-template>
+
+  <app-carousel [items]="services" [itemTemplate]="cardtemplate"></app-carousel>
+</section>

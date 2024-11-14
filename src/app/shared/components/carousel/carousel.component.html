@@ -1,0 +1,17 @@
+<div class="carousel" (touchstart)="onTouchStart($event)" (touchmove)="onTouchMove($event)" (touchend)="onTouchEnd()">
+    <!-- <button mat-icon-button (click)="previous()" aria-label="Previous slide">
+        <mat-icon>chevron_left</mat-icon>
+    </button> -->
+
+    <div class="carousel-track" [style.transform]="getTransform()">
+        <ng-container *ngFor="let item of items; let i = index">
+            <div class="carousel-slide">
+                <ng-container *ngTemplateOutlet="itemTemplate; context: { $implicit: item }"></ng-container>
+            </div>
+        </ng-container>
+    </div>
+
+    <!-- <button mat-icon-button (click)="next()" aria-label="Next slide">
+        <mat-icon>chevron_right</mat-icon>
+    </button> -->
+</div>

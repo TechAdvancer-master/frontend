@@ -1,0 +1,10 @@
+<mat-card class="service-card">
+    <mat-card-header class="card-header">
+        <img class="icon" *ngIf="service.icon" mat-card-avatar src="{{ service.icon }}" alt="{{ service.title }}">
+        <mat-card-title>{{ service.title }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="content">{{ service.description }}</mat-card-content>
+    <mat-card-actions>
+        <app-link [href]="service.href" text="Learn more"></app-link>
+    </mat-card-actions>
+</mat-card>

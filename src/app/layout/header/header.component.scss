@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+.links  {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--main);
+}
+
+.link:visited {
+    color: var(--main);
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+
+.text-navigation {
+    display: none;
+}

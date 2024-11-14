@@ -1,0 +1,7 @@
+<mat-card class="product-card">
+    <mat-card-title>{{ product.title }}</mat-card-title>
+    <mat-card-content class="content">{{ product.description }}</mat-card-content>
+    <mat-card-actions>
+        <app-link [href]="product.href" text="Learn more"></app-link>
+    </mat-card-actions>
+</mat-card>

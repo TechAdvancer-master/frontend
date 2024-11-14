@@ -1,0 +1,93 @@
+<app-banner></app-banner>
+
+<main class="main">
+
+    <section>
+        <div class="inline-padding">
+            <h2>Our purpose</h2>
+            <p>At TechAdvancer, we believe in empowering businesses to thrive through advanced AI-driven solutions and
+                world-class talent. From enhancing team capabilities to delivering tailored software solutions, our
+                services
+                are designed to foster success in every project.</p>
+        </div>
+        <img src="ai_woman.gif" alt="woman ai" class="img" />
+    </section>
+
+    <section>
+        <div class="inline-padding">
+            <h2>Core Service Highlights</h2>
+            <ng-template #cardtemplate let-item>
+                <app-card-service [service]="item"></app-card-service>
+            </ng-template>
+        </div>
+
+        <app-carousel [items]="services" [itemTemplate]="cardtemplate"></app-carousel>
+    </section>
+
+    <section class="products">
+        <div class="inline-padding">
+            <h2>Our core products</h2>
+            <p>Discover our innovative products that are transforming businesses worldwide.</p>
+
+            <app-card-product></app-card-product>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    Our Products (Overview + Link): Include concise descriptions of key products, encouraging visitors to view more
+    details
+    on the “Our Products” page.
+    Business-Pulse: “Our intelligent platform that provides real-time insights into workforce productivity and
+    efficiency,
+    ensuring optimal resource use and transparency.”
+    SMART Chatbots: “Revolutionize customer interactions with predictive and adaptive chatbots powered by TechAdvancer’s
+    advanced AI.”
+    Section: Why Work With Us? (Value Proposition)
+
+    Unique Selling Points: Expand on why your company is a valuable partner. Examples include:
+    Innovation-Driven: “Constantly at the forefront of AI advancements to offer next-generation solutions.”
+    Client-Centric Approach: “We tailor every solution to fit the unique needs of each client, ensuring results that
+    matter.”
+    Proven Expertise: “Our team of industry veterans and technology experts ensures reliable, high-quality service.”
+    Mission and Vision Statement
+
+    Reinforce the Mission and Vision, with a link to the “About Us” page for visitors interested in learning more about
+    the
+    company’s background, values, and team.
+    Mission: “To drive success in a digital-first world through innovative technology and expert talent.”
+    Vision: “To be the go-to partner for companies seeking to stay ahead in the digital future, powered by our unique
+    blend
+    of AI and talent solutions.”
+    Success Stories or Testimonials (Optional)
+
+    Client Testimonials: One or two brief testimonials can help build credibility and highlight success stories. These
+    can
+    link to a “Case Studies” or “Success Stories” section if applicable.
+    Example: “TechAdvancer’s solutions transformed our workforce efficiency by over 30%. The team’s expertise and
+    support
+    were exceptional.” – [Client’s Name or Industry]
+    Quick Overview of Key Technologies and Expertise
+
+    Our Technology Stack: Highlight the primary technologies used (e.g., Front-End, Back-End, AI, Cloud Computing). This
+    could also link to an “Our Services” or “Technology” page.
+    Example Text: “Our expertise spans essential technologies like AI, Front-End and Back-End development, and cloud
+    computing, providing tailored solutions that adapt to the demands of today’s dynamic market.”
+    Explore Further (Call-to-Actions and Links)
+
+    Include links to encourage visitors to explore deeper sections:
+    “Learn more about our About Us story.”
+    “See our full range of services.”
+    “Discover how our products can transform your business.”
+    “Ready to connect? Contact Us today.”
+    Contact Prompt (Contact Us Section Teaser)
+
+    Short section to encourage visitors to reach out with questions or inquiries, leading them to the “Contact Us” page.
+    Example Text: “Have questions? Our team is here to help. Reach out to us today, and let’s discuss how we can assist
+    with
+    your goals.”
+</main>
