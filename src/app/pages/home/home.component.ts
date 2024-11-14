@@ -4,11 +4,12 @@ import { CardServiceComponent } from '../../shared/components/card/card-service/
 import { CommonModule } from '@angular/common';
 import { BannerComponent } from '../../shared/components/banner/banner.component';
 import { CardProductComponent } from "../../shared/components/card/card-product/card-product.component";
+import { MatListModule } from '@angular/material/list'
 
 @Component({
   selector: 'app-homepage',
   standalone: true,
-  imports: [CommonModule, CardServiceComponent, CarouselComponent, BannerComponent, CardProductComponent],
+  imports: [CommonModule, CardServiceComponent, CarouselComponent, BannerComponent, CardProductComponent, MatListModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
@@ -22,7 +23,7 @@ export class HomeComponent {
   ];
 
   products = [
-    { title: "Business Pulse", description: "A comprehensive dashboard for business insights", href: "products/business-pulse" },
-    { title: "Smart Bots", description: "AI-powered chatbots for customer service", href: "products/smart-bots" },
+    { title: "Business Pulse", description: "Our intelligent platform that provides real-time insights into workforce productivity and efficiency, ensuring optimal resource use and transparency.", href: "products/business-pulse" },
+    { title: "Smart Bots", description: "Elevate customer experiences with cutting-edge AI-powered chatbots", href: "products/smart-bots" },
   ];
 }

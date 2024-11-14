@@ -29,30 +29,32 @@
             <h2>Our core products</h2>
             <p>Discover our innovative products that are transforming businesses worldwide.</p>
 
-            <app-card-product></app-card-product>
+            <div class="product-list">
+                <app-card-product *ngFor="let product of products" [product]="product"></app-card-product>
+            </div>
         </div>
+    </section>
 
+    <section>
+        <div class="inline-padding">
+            <h2>Why Choose TechAdvancer</h2>
+            <p>Here’s why partnering with TechAdvancer can drive your business to success:</p>
+
+            <ul class="selling-points-list">
+                <li>
+                    <strong>Innovation-Driven:</strong>
+                    <p>Constantly at the forefront of AI advancements to offer next-generation solutions.</p>
+                </li>
+                <li>
+                    <strong>Client-Centric Approach:</strong>
+                    <p>We tailor every solution to fit the unique needs of each client, ensuring results that matter.
+                    </p>
+                </li>
+            </ul>
+        </div>
     </section>
 
 
-
-
-
-
-    Our Products (Overview + Link): Include concise descriptions of key products, encouraging visitors to view more
-    details
-    on the “Our Products” page.
-    Business-Pulse: “Our intelligent platform that provides real-time insights into workforce productivity and
-    efficiency,
-    ensuring optimal resource use and transparency.”
-    SMART Chatbots: “Revolutionize customer interactions with predictive and adaptive chatbots powered by TechAdvancer’s
-    advanced AI.”
-    Section: Why Work With Us? (Value Proposition)
-
-    Unique Selling Points: Expand on why your company is a valuable partner. Examples include:
-    Innovation-Driven: “Constantly at the forefront of AI advancements to offer next-generation solutions.”
-    Client-Centric Approach: “We tailor every solution to fit the unique needs of each client, ensuring results that
-    matter.”
     Proven Expertise: “Our team of industry veterans and technology experts ensures reliable, high-quality service.”
     Mission and Vision Statement
 
