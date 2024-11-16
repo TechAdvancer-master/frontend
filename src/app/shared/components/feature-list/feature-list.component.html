@@ -1,0 +1,9 @@
+<div class="feature-list">
+    <h2 *ngIf="title" class="mat-headline-medium">{{ title }}</h2>
+    <ul>
+        <li *ngFor="let item of features">
+            <app-feature-item [title]="item.title" [description]="item.description">
+            </app-feature-item>
+        </li>
+    </ul>
+</div>

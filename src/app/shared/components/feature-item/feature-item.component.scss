@@ -1,0 +1,22 @@
+.feature-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+mat-card-title {
+    font-size: 1.2rem;
+    color: var(--white);
+
+}
+
+mat-card-content p {
+    color: var(--white);
+    margin-block-start: 10px;
+}
+
+
+mat-divider {
+    height: 2px;
+    border-color: var(--deep-magenta);
+    border-width: 2px;
+}

@@ -1,8 +1,9 @@
-<mat-toolbar color="primary">
-  <button mat-icon-button aria-label="menu">
-    <mat-icon>menu</mat-icon>
+<mat-toolbar class="container glass">
+  <button mat-icon-button aria-label="menu" class="btn-icon">
+    <mat-icon class="icon-menu">menu</mat-icon>
   </button>
-  <span>TechAdvancer</span>
+  <app-logo [width]="35" displayMode="minimal"></app-logo>
   <app-navigation-text-based class="text-navigation"></app-navigation-text-based>
-  <a mat-raised-button routerLink="/contact-us">Contact Us</a>
+  <a mat-flat-button routerLink="/contact-us" class="btn-contact-us">Contact Us</a>
 </mat-toolbar>
+<div class="spacer"></div>

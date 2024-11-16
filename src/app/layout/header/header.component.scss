@@ -1,32 +1,45 @@
-.header {
+.container {
+    width: 100vw;
+    height: max-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-index-header);
+    padding: 1rem 0.25rem ;
+    border-radius: 0 0 20px 20px;
     display: flex;
     align-items: center;
+    gap: 0.75rem;
 }
 
-.logo {
-    width: 200px;
-}
-
-.links  {
-    display: flex;
-    gap: 8px;
-    list-style: none;
-}
-
-.link {
-    text-decoration: none;
-    color: var(--main);
-}
-
-.link:visited {
-    color: var(--main);
+.glass {
+    background: rgba(var(--black) 0.1);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 10px rgba(var(--black) 0.1);
+    transition: background 0.3s;
 }
 
 .spacer {
-  flex: 1 1 auto;
+    min-height: 56px;
+    background-color: var(--black);
 }
 
+.btn-icon {
+    width: max-content;
+    height: max-content;
+}
+
+.icon-menu {
+    font-size: 2rem ;
+}
 
 .text-navigation {
     display: none;
+    @media screen and (min-width: var(--breakpoint-desktop)) {
+        display: intial;
+    }
+}
+
+.btn-contact-us {
+    margin-inline-start: auto;
 }

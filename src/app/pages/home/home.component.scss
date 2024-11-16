@@ -1,11 +1,11 @@
 .main {
-    background: var(--main-to-pink-to-purple-vertical-gradient);
+    background-color: var(--black);
     color: var(--white);
     border: 1px solid transparent;
 }   
 
 .inline-padding {
-    padding: 0 1rem;
+    padding: 1rem 1rem;
 }
 
 .img {
@@ -16,6 +16,7 @@
     background-image: url("/pulse.jpg");
     position: relative;
     padding-block: 2rem;
+    background-size: cover;
     
     &::before {
         content: "";
@@ -32,13 +33,83 @@
         position: relative;
         z-index: 2;
       }
+      .product-list {
+          padding: 2rem;
+          display: flex;
+          gap: 2rem;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+      }
 }
 
-.product-list {
-    padding: 2rem;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
+.choose-us {
+    background-image: var(--dark-purple-to-black-radial-gradient);
+    background-position: 20vw -50vw;
+    background-size: 80vw 100vw;
+    background-repeat: no-repeat;
 }
+
+
+.expertise-section {
+    img {
+        width: 100%;
+    }
+}
+
+.success-stories {
+    padding: 2rem 0;
+}
+
+.testimonials {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.explore-links {
+    .inline-padding {
+      padding: 1rem 1.5rem;
+  
+      h2 {
+        margin-bottom: 0.5rem;
+      }
+  
+      p {
+        margin-bottom: 1rem;
+        color: var(--text-secondary);
+        font-size: 1rem;
+      }
+    }
+  
+    .explore-links-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  
+      li {
+        margin-bottom: 0.5rem;
+  
+        .explore-link {
+          text-decoration: none;
+          color: var(--sys-on-primary-fixed-variant);
+          font-weight: 500;
+          font-size: 1rem;
+          transition: color 0.3s ease, text-decoration 0.3s ease;
+  
+          &:hover {
+            color: var(--sys-on-primary-fixed-variant), 15%;
+            text-decoration: underline;
+          }
+  
+          &:focus {
+            outline: 2px solid var(--primary-focus);
+            outline-offset: 2px;
+          }
+        }
+      }
+    }
+  }
+  
+  

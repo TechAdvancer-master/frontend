@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1353.96 366.25">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #191919;
+        stroke-miterlimit: 10;
+        stroke-width: 19.84px;
+      }
+
+      .cls-6 {
+        font-family: CenturyGothic, 'Century Gothic';
+        font-size: 30px;
+        letter-spacing: .5em;
+      }
+
+      .cls-6, .cls-7, .cls-8 {
+        fill: #191919;
+      }
+
+      .cls-9 {
+        letter-spacing: -.13em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-11 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-12 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-13 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-14 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-15 {
+        fill: #1d1d1b;
+      }
+
+      .cls-16 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-8 {
+        font-family: DMSerifDisplay-Regular, 'DM Serif Display';
+        font-size: 150px;
+      }
+    </style>
+  </defs>
+  <g id="Capa_2" data-name="Capa 2">
+    <g>
+      <text class="cls-6" transform="translate(593.37 279.45)"><tspan x="0" y="0">ultimate it solutions</tspan></text>
+      <g>
+        <text class="cls-8" transform="translate(485.17 229.51)"><tspan class="cls-9" x="0" y="0">T</tspan><tspan class="cls-13" x="75.15" y="0">e</tspan><tspan class="cls-12" x="143.7" y="0">c</tspan><tspan class="cls-11" x="207.15" y="0">h</tspan><tspan class="cls-14" x="286.65" y="0">A</tspan><tspan class="cls-16" x="373.65" y="0">d</tspan><tspan class="cls-1" x="450.75" y="0">v</tspan><tspan class="cls-4" x="519.3" y="0">a</tspan><tspan class="cls-10" x="589.2" y="0">n</tspan><tspan class="cls-2" x="668.39" y="0">c</tspan><tspan class="cls-11" x="734.09" y="0">er</tspan></text>
+        <g>
+          <g>
+            <g>
+              <rect class="cls-15" x="197.3" y="200.14" width="32.96" height="97.68" rx="16.48" ry="16.48" transform="translate(163.95 -75.38) rotate(31.92)"/>
+              <rect class="cls-15" x="132.1" y="210.69" width="32.96" height="97.68" rx="16.48" ry="16.48" transform="translate(159.67 -39.32) rotate(31.92)"/>
+              <rect class="cls-15" x="115.13" y="149.31" width="32.96" height="97.68" rx="16.48" ry="16.48" transform="translate(124.65 -39.62) rotate(31.92)"/>
+            </g>
+            <path class="cls-15" d="M243.98,202.87c16.02-24.4,31.98-50.76,37.3-66.25,2.64-7.68,3.8-20.39,3.24-33.07l-52.6-33.08c-11.99,4.96-23.24,11.54-29.01,17.34-11.56,11.61-28.19,37.58-43.03,62.73M156.66,156.02c-3.91,6.71-7.66,13.28-11.1,19.41-11.19,19.91-2.53,46.53,19.6,60.32,22.13,13.78,49.84,9.81,62.78-9.01,3.96-5.77,8.18-11.99,12.45-18.42M283.87,95.01c-1.5-13.85-9.02-20.63-15.29-24.53-6.28-3.91-15.52-7.54-28.9-2.94M227.05,156.61c-12.75,0-23.08-10.33-23.08-23.08s10.33-23.08,23.08-23.08,23.08,10.33,23.08,23.08-10.33,23.08-23.08,23.08Z"/>
+          </g>
+          <path class="cls-3" d="M188.24,168.12c2.54-3.06,6.37-5,10.65-5,7.65,0,13.85,6.2,13.85,13.85,0,2.3-.56,4.46-1.55,6.37"/>
+        </g>
+        <path class="cls-5" d="M245.65,9.92h-98.63c-31.37,0-60.35,16.73-76.03,43.9l-49.31,85.41c-15.68,27.16-15.68,60.63,0,87.79l49.31,85.41c15.68,27.16,44.67,43.9,76.03,43.9h98.63c31.37,0,60.35-16.73,76.03-43.9l49.31-85.41c15.68-27.16,15.68-60.63,0-87.79l-49.31-85.41c-15.68-27.16-44.67-43.9-76.03-43.9Z"/>
+      </g>
+      <rect class="cls-7" x="434.11" y="108.13" width="10.98" height="150"/>
+    </g>
+  </g>
+</svg>

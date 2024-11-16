@@ -4,9 +4,12 @@
     <style>
       .cls-1 {
         fill: none;
-        stroke: #000;
+        stroke: #910a67;
         stroke-miterlimit: 10;
-        stroke-width: 2.83px;
+        stroke-width: 3.5px;
+      }
+      path {
+        fill: #910a67;
       }
     </style>
   </defs>

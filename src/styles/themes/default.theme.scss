@@ -1,10 +1,15 @@
 @use '@angular/material' as mat;
+@use 'sass:map';
+
+
+$primary-base: #3c0753;
+
+
 
 $TechAdvancer-theme: mat.define-theme((
   color: (
     theme-type: dark,
-    primary: mat.$azure-palette,
-    tertiary: mat.$blue-palette,
+    use-system-variables: true,
   ),
   density: (
     scale: 0,

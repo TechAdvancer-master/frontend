@@ -1,0 +1,39 @@
+:host {
+    height: min-content;
+}
+
+.container {
+    aspect-ratio: auto;
+    height: auto; 
+    overflow: hidden; 
+    display: inline-block; 
+}
+
+
+.minimal .icon {
+    display: initial;
+  }
+  
+  .minimal .separator,
+  .minimal .company-name,
+  .minimal .slogan {
+    display: none;
+  }
+  
+  .full .icon,
+  .full .separator,
+  .full .company-name,
+  .full .slogan {
+    display: initial;
+  }
+  
+  .just-text .icon,
+  .just-text .separator {
+    display: none;
+  }
+  
+  .just-text .company-name,
+  .just-text .slogan {
+    display: initial;
+  }
+  

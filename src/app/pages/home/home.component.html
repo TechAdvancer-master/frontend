@@ -35,9 +35,10 @@
         </div>
     </section>
 
-    <section>
+    <section class="choose-us">
         <div class="inline-padding">
-            <h2>Why Choose TechAdvancer</h2>
+            <app-feature-list title="Why Choose TechAdvancer" [features]="why_choose_us"></app-feature-list>
+            <h2 class="mat-headline-large">Why Choose TechAdvancer</h2>
             <p>Here’s why partnering with TechAdvancer can drive your business to success:</p>
 
             <ul class="selling-points-list">
@@ -55,41 +56,56 @@
     </section>
 
 
-    Proven Expertise: “Our team of industry veterans and technology experts ensures reliable, high-quality service.”
-    Mission and Vision Statement
+    <section class="expertise-section">
+        <div class="inline-padding">
+            <h2 class="mat-display-1">Proven Expertise</h2>
+            <p class="mat-body-1">Our team of industry veterans and technology experts ensures reliable, high-quality
+                service.</p>
+        </div>
+        <img src="/working-room.jpg" alt="engineers working together">
 
-    Reinforce the Mission and Vision, with a link to the “About Us” page for visitors interested in learning more about
-    the
-    company’s background, values, and team.
-    Mission: “To drive success in a digital-first world through innovative technology and expert talent.”
-    Vision: “To be the go-to partner for companies seeking to stay ahead in the digital future, powered by our unique
-    blend
-    of AI and talent solutions.”
-    Success Stories or Testimonials (Optional)
+        <div class="technologies">
+            <app-feature-list title="Key Technologies and Expertise" [features]="key_techs"></app-feature-list>
+        </div>
+    </section>
 
-    Client Testimonials: One or two brief testimonials can help build credibility and highlight success stories. These
-    can
-    link to a “Case Studies” or “Success Stories” section if applicable.
-    Example: “TechAdvancer’s solutions transformed our workforce efficiency by over 30%. The team’s expertise and
-    support
-    were exceptional.” – [Client’s Name or Industry]
-    Quick Overview of Key Technologies and Expertise
+    <section class="success-stories">
+        <div class="inline-padding">
+            <h2>Success Stories</h2>
+            <p>Discover how our expertise has empowered businesses to achieve remarkable outcomes.</p>
+            <div class="testimonials">
+                <app-card-testimonial
+                    testimonial="TechAdvancer’s solutions transformed our workforce efficiency by over 30%. The team’s expertise and support were exceptional."
+                    client="– Jane Doe, Operations Manager, FinTech Corp">
+                </app-card-testimonial>
 
-    Our Technology Stack: Highlight the primary technologies used (e.g., Front-End, Back-End, AI, Cloud Computing). This
-    could also link to an “Our Services” or “Technology” page.
-    Example Text: “Our expertise spans essential technologies like AI, Front-End and Back-End development, and cloud
-    computing, providing tailored solutions that adapt to the demands of today’s dynamic market.”
-    Explore Further (Call-to-Actions and Links)
+                <app-card-testimonial
+                    testimonial="The AI-driven tools provided by TechAdvancer have streamlined our operations, enabling us to focus on scaling our business."
+                    client="– John Smith, CEO, RetailTech Solutions">
+                </app-card-testimonial>
+            </div>
+        </div>
+    </section>
 
-    Include links to encourage visitors to explore deeper sections:
-    “Learn more about our About Us story.”
-    “See our full range of services.”
-    “Discover how our products can transform your business.”
-    “Ready to connect? Contact Us today.”
-    Contact Prompt (Contact Us Section Teaser)
+    <section class="explore-links">
+        <div class="inline-padding">
+            <h2 class="mat-headline-medium">Explore More</h2>
+            <p>Discover more about our offerings and how we can help your business thrive:</p>
+            <ul class="explore-links-list">
+                <li *ngFor="let link of exploreLinks">
+                    <a [href]="link.url" class="explore-link mat-body-2">{{ link.text }}</a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-    Short section to encourage visitors to reach out with questions or inquiries, leading them to the “Contact Us” page.
-    Example Text: “Have questions? Our team is here to help. Reach out to us today, and let’s discuss how we can assist
-    with
-    your goals.”
+
+    <section class="contact-prompt">
+        <div class="inline-padding">
+            <h2 class="mat-headline-medium">Contact Us</h2>
+            <p class="mat-body-1">Have questions? Our team is here to help. Reach out to us today, and let’s discuss how
+                we can assist with your goals.</p>
+            <a href="/contact-us" class="mat-flat-button mat-primary-button">Get in Touch</a>
+        </div>
+    </section>
 </main>

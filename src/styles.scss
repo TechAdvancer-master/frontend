@@ -18,6 +18,8 @@
 // that you are using.
 :root {
   @include mat.all-component-themes(techAdvancerTheme.$TechAdvancer-theme);
+  @include mat.system-level-colors(techAdvancerTheme.$TechAdvancer-theme);
+  @include mat.system-level-typography(techAdvancerTheme.$TechAdvancer-theme);
 }
 
 // Comment out the line below if you want to use the pre-defined typography utility classes.
@@ -27,17 +29,17 @@
 // Comment out the line below if you want to use the deprecated `color` inputs.
 // @include mat.color-variants-backwards-compatibility($TechAdvancer-styles);
 :root {
-  --main: #030637; // very-dark-blue
-  --dark-purple: #3c0753;
-  --deep-magenta: #720455;
-  --dark-pink: #910a67;
+  --very-dark-blue: rgb(3, 6, 55); // gradientes, fondos
+  --dark-purple: rgb(60, 7, 83); // gradientes o imagenes
+  --deep-magenta: rgb(114, 4, 85); // para CTA y acentos 
+  --dark-pink: rgb(145, 10, 103); //acentos en particular para destacar información
   --white: #ffffff;
-  --black: #1a1a1a;
+  --black: rgb(26, 26, 26); //main
 
-  --main-to-pink-to-purple-vertical-gradient: radial-gradient(
+  --dark-purple-to-black-radial-gradient: radial-gradient(
     circle,
     var(--dark-purple) 0%,
-    var(--black) 15%
+    var(--black) 70%
   );
   
   --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
@@ -48,6 +50,14 @@
   );
   
   --pill-accent: var(--dark-purple);
+
+  // Breakpoints
+  --breakpoint-mobile: 600px;
+  --breakpoint-tablet: 960px;
+  --breakpoint-desktop: 1280px;
+
+  // Z-Index
+  --z-index-header: 1000;
 }
 
 
@@ -57,4 +67,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--mat-tab-header-label-text-font), Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
 }
