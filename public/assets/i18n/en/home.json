@@ -1,0 +1,121 @@
+{
+  "HOME": {
+    "BANNER": {
+      "TITLE": "Empowering Businesses with AI Solutions",
+      "DESCRIPTION": "Our expertise ensures success for every project."
+    },
+    "PURPOSE": {
+      "TITLE": "Our purpose",
+      "DESCRIPTION": "At TechAdvancer, we believe in empowering businesses to thrive through advanced AI-driven solutions and world-class talent. From enhancing team capabilities to delivering tailored software solutions, our services are designed to foster success in every project.",
+      "IMAGE_ALT": "woman ai"
+    },
+    "SERVICES": {
+      "EXPERT_CONNECT": {
+        "TITLE": "Expert Connect",
+        "DESCRIPTION": "We connect our clients with world-class specialists",
+        "HREF": "services/expert-connect",
+        "ICON": "/icons/expert-connect.svg"
+      },
+      "TALENT_FUSION": {
+        "TITLE": "Talent Fusion",
+        "DESCRIPTION": "We secure the formation of high-performance teams",
+        "HREF": "services/talent-fusion",
+        "ICON": "/icons/talent-fusion.svg"
+      },
+      "SKILL_LAB": {
+        "TITLE": "Skill Lab",
+        "DESCRIPTION": "We focus on up-skilling and re-skilling developers",
+        "HREF": "services/skill-lab",
+        "ICON": "/icons/skill-lab.svg"
+      },
+      "TECH_FORGE": {
+        "TITLE": "Tech-Forge",
+        "DESCRIPTION": "Comprehensive training programs in Front-End, Back-End",
+        "HREF": "services/tech-forge",
+        "ICON": "/icons/tech-forge.svg"
+      },
+      "CLOUD_SERVICES": {
+        "TITLE": "Cloud Services",
+        "DESCRIPTION": "We manage multi-cloud environments",
+        "HREF": "services/cloud-services",
+        "ICON": "/icons/cloud-services.svg"
+      }
+    },
+    "PRODUCTS": {
+      "TITLE": "Our core products",
+      "DESCRIPTION": "Discover our innovative products that are transforming businesses worldwide.",
+      "BUSINESS_PULSE": {
+        "TITLE": "Business Pulse",
+        "DESCRIPTION": "Our intelligent platform that provides real-time insights into workforce productivity and efficiency, ensuring optimal resource use and transparency.",
+        "HREF": "products/business-pulse"
+      },
+      "SMART_BOTS": {
+        "TITLE": "Smart Bots",
+        "DESCRIPTION": "Elevate customer experiences with cutting-edge AI-powered chatbots",
+        "HREF": "products/smart-bots"
+      }
+    },
+    "WHY_CHOOSE_US": {
+      "TITLE": "Why Choose TechAdvancer",
+      "DESCRIPTION": "Here’s why partnering with TechAdvancer can drive your business to success:",
+      "POINTS": {
+        "INNOVATION_DRIVEN": {
+          "TITLE": "Innovation-Driven",
+          "DESCRIPTION": "Constantly at the forefront of AI advancements to offer next-generation solutions."
+        },
+        "CLIENT_CENTRIC": {
+          "TITLE": "Client-Centric Approach",
+          "DESCRIPTION": "We tailor every solution to fit the unique needs of each client, ensuring results that matter."
+        }
+      }
+    },
+    "EXPERTISE": {
+      "TITLE": "Proven Expertise",
+      "DESCRIPTION": "Our team of industry veterans and technology experts ensures reliable, high-quality service.",
+      "IMAGE_ALT": "engineers working together",
+      "KEY_TECHS": {
+        "AI": {
+          "TITLE": "AI & Machine Learning",
+          "DESCRIPTION": "Advanced AI-driven tools for predictive analytics, process automation, and decision-making support."
+        },
+        "CLOUD": {
+          "TITLE": "Cloud Integration",
+          "DESCRIPTION": "Seamless integration of cloud solutions for scalable and secure data management."
+        },
+        "SOFTWARE": {
+          "TITLE": "Custom Software Development",
+          "DESCRIPTION": "Tailored software solutions designed to meet your unique business needs."
+        }
+      }
+    },
+    "SUCCESS_STORIES": {
+      "TITLE": "Success Stories",
+      "DESCRIPTION": "Discover how our expertise has empowered businesses to achieve remarkable outcomes.",
+      "TESTIMONIALS": [
+        {
+          "TEXT": "TechAdvancer’s solutions transformed our workforce efficiency by over 30%. The team’s expertise and support were exceptional.",
+          "CLIENT": "– Jane Doe, Operations Manager, FinTech Corp"
+        },
+        {
+          "TEXT": "The AI-driven tools provided by TechAdvancer have streamlined our operations, enabling us to focus on scaling our business.",
+          "CLIENT": "– John Smith, CEO, RetailTech Solutions"
+        }
+      ]
+    },
+    "EXPLORE_LINKS": {
+      "TITLE": "Explore More",
+      "DESCRIPTION": "Discover more about our offerings and how we can help your business thrive:",
+      "LINKS": {
+        "ABOUT_US": "Learn more about our About Us story.",
+        "SERVICES": "See our full range of services.",
+        "PRODUCTS": "Discover how our products can transform your business.",
+        "CONTACT_US": "Ready to connect? Contact Us today."
+      }
+    },
+    "CONTACT_PROMPT": {
+      "TITLE": "Contact Us",
+      "DESCRIPTION": "Have questions? Our team is here to help. Reach out to us today, and let’s discuss how we can assist with your goals.",
+      "BUTTON_TEXT": "Get in Touch"
+    }
+  }
+}

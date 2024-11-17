@@ -58,6 +58,17 @@
 
   // Z-Index
   --z-index-header: 1000;
+
+  //glassmorphism
+  --glassmorphism-background: rgba(255, 255, 255, 0.1);
+  --glassmorphism-blur: 8px;
+
+  // Border Radius
+  --border-radius-small: 6px;
+  --border-radius-medium: 12px;
+  --border-radius-large: 18px;
+
+  --header-height: 77.6px;
 }
 
 
@@ -72,4 +83,10 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
+}
+
+.glassmorphism {
+  background: var(--glassmorphism-background) !important;
+  backdrop-filter: blur(var(--glassmorphism-blur)) !important;
+  box-shadow: 0 4px 6px var(--glassmorphism-background) !important;
 }

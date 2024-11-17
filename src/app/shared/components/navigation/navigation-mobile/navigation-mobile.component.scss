@@ -1,0 +1,25 @@
+.container {
+    width: 50vw;
+}
+
+.links {   
+    ::ng-deep nav {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    ::ng-deep nav a {
+      margin-bottom: 0.5rem;
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s ease-in-out;
+  
+      &:hover {
+        text-transform: underline;
+        // underline line color
+        color: var(--dark-pink);
+      }
+    }
+  }
+  

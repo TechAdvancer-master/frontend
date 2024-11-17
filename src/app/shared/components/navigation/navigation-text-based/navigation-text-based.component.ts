@@ -11,7 +11,6 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navigation-text-based.component.scss'
 })
 export class NavigationTextBasedComponent {
-
   links = [
     {
       href: "/",

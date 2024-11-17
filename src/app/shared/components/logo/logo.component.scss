@@ -1,10 +1,10 @@
-:host {
-    height: min-content;
+#Capa_2 {
+    // height: min-content;
 }
 
 .container {
     aspect-ratio: auto;
-    height: auto; 
+    height: min-content; 
     overflow: hidden; 
     display: inline-block; 
 }

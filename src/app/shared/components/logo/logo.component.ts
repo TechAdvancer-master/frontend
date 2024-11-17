@@ -21,10 +21,11 @@ export class LogoComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.adjustViewBox();
-    this.adjustHostHeight();
+    // this.adjustHostHeight();
   }
 
   private adjustViewBox(): void {
+    if (typeof window === 'undefined') return;
     const svg = this.svgElement.nativeElement;
     const visibleElements = Array.from(svg.querySelectorAll<SVGGraphicsElement>('*'))
       .filter((el) => window.getComputedStyle(el).display !== 'none');
@@ -44,10 +45,8 @@ export class LogoComponent implements AfterViewInit {
       maxY = Math.max(maxY, bbox.y + bbox.height);
     });
 
-    const offsetX = 0.1;
-    const offsetY = 0.05;
-    const width = (maxX + maxX * offsetX) - minX;
-    const height = (maxY + maxY * offsetY) - minY;
+    const width = maxX - minX;
+    const height = maxY - minY;
 
     this.viewBox = `${minX} ${minY} ${width} ${height}`;
   }
@@ -58,7 +57,7 @@ export class LogoComponent implements AfterViewInit {
     const viewBoxHeight = viewBoxValues[3];
 
     const aspectRatio = svg.clientWidth / svg.clientHeight;
-    const calculatedHeight = svg.clientHeight * (viewBoxHeight / viewBoxValues[2]) * aspectRatio;
+    const calculatedHeight = viewBoxHeight / aspectRatio;
 
     this.renderer.setStyle(this.hostElement.nativeElement, 'height', `${calculatedHeight}px`);
   }

@@ -11,7 +11,7 @@ import { NgFor, NgIf } from '@angular/common';
 })
 export class FeatureListComponent {
 
-  @Input() title: string = '';
+  @Input() title?: string;
   @Input() features: { title: string; description: string }[] = [];
 
   isLastItem(item: { title: string; description: string }): boolean {

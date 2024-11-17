@@ -1,19 +1,25 @@
-<footer>
-  <nav>
-    <a href="#banner">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+<footer class="footer">
+  <app-logo displayMode="full" [width]="300"></app-logo>
+  <nav class="footer-nav">
+    <a *ngFor="let link of navLinks" [href]="link.href" mat-button class="nav-link">{{ link.label }}</a>
   </nav>
+
   <div class="contact-info">
-    <p>Address: 123 TechAdvancer St., Innovation City</p>
-    <p>Phone: +123-456-7890</p>
-    <p>Email: contact&#64;TechAdvancer.com</p>
+    <p *ngFor="let info of contactInfo">
+      <span class="info-type">{{ info.type }}:</span>
+      <span class="info-value">{{ info.value }}</span>
+    </p>
   </div>
+
   <div class="social-media">
-    <a href="#"><mat-icon>linkedin</mat-icon></a>
-    <a href="#"><mat-icon>twitter</mat-icon></a>
-    <a href="#"><mat-icon>facebook</mat-icon></a>
+    <a *ngFor="let social of socialMediaLinks" [href]="social.url" mat-icon-button class="social-link" target="_blank"
+      rel="noopener noreferrer">
+      <mat-icon>{{ social.icon }}</mat-icon>
+    </a>
   </div>
-  <p>&copy; 2024 TechAdvancer. All rights reserved. | <a href="#">Privacy Policy</a></p>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 TechAdvancer. All rights reserved.</p>
+    <a href="#" mat-button class="privacy-policy">Privacy Policy</a>
+  </div>
 </footer>

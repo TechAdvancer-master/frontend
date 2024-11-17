@@ -4,31 +4,26 @@
 
     <section>
         <div class="inline-padding">
-            <h2>Our purpose</h2>
-            <p>At TechAdvancer, we believe in empowering businesses to thrive through advanced AI-driven solutions and
-                world-class talent. From enhancing team capabilities to delivering tailored software solutions, our
-                services
-                are designed to foster success in every project.</p>
+            <h2>{{ 'HOME.PURPOSE.TITLE' | translate }}</h2>
+            <p>{{ 'HOME.PURPOSE.DESCRIPTION' | translate }}</p>
         </div>
-        <img src="ai_woman.gif" alt="woman ai" class="img" />
+        <img src="ai_woman.gif" alt="{{ 'HOME.PURPOSE.IMAGE_ALT' | translate }}" class="img" />
     </section>
 
     <section>
         <div class="inline-padding">
-            <h2>Core Service Highlights</h2>
+            <h2>{{ 'HOME.SERVICES.TITLE' | translate }}</h2>
             <ng-template #cardtemplate let-item>
                 <app-card-service [service]="item"></app-card-service>
             </ng-template>
         </div>
-
         <app-carousel [items]="services" [itemTemplate]="cardtemplate"></app-carousel>
     </section>
 
     <section class="products">
         <div class="inline-padding">
-            <h2>Our core products</h2>
-            <p>Discover our innovative products that are transforming businesses worldwide.</p>
-
+            <h2>{{ 'HOME.PRODUCTS.TITLE' | translate }}</h2>
+            <p>{{ 'HOME.PRODUCTS.DESCRIPTION' | translate }}</p>
             <div class="product-list">
                 <app-card-product *ngFor="let product of products" [product]="product"></app-card-product>
             </div>
@@ -37,51 +32,39 @@
 
     <section class="choose-us">
         <div class="inline-padding">
-            <app-feature-list title="Why Choose TechAdvancer" [features]="why_choose_us"></app-feature-list>
-            <h2 class="mat-headline-large">Why Choose TechAdvancer</h2>
-            <p>Here’s why partnering with TechAdvancer can drive your business to success:</p>
-
+            <h2>{{ 'HOME.WHY_CHOOSE_US.TITLE' | translate }}</h2>
+            <p>{{ 'HOME.WHY_CHOOSE_US.DESCRIPTION' | translate }}</p>
             <ul class="selling-points-list">
                 <li>
-                    <strong>Innovation-Driven:</strong>
-                    <p>Constantly at the forefront of AI advancements to offer next-generation solutions.</p>
+                    <strong>{{ 'HOME.WHY_CHOOSE_US.POINTS.INNOVATION_DRIVEN.TITLE' | translate }}</strong>
+                    <p>{{ 'HOME.WHY_CHOOSE_US.POINTS.INNOVATION_DRIVEN.DESCRIPTION' | translate }}</p>
                 </li>
                 <li>
-                    <strong>Client-Centric Approach:</strong>
-                    <p>We tailor every solution to fit the unique needs of each client, ensuring results that matter.
-                    </p>
+                    <strong>{{ 'HOME.WHY_CHOOSE_US.POINTS.CLIENT_CENTRIC.TITLE' | translate }}</strong>
+                    <p>{{ 'HOME.WHY_CHOOSE_US.POINTS.CLIENT_CENTRIC.DESCRIPTION' | translate }}</p>
                 </li>
             </ul>
         </div>
     </section>
 
-
     <section class="expertise-section">
         <div class="inline-padding">
-            <h2 class="mat-display-1">Proven Expertise</h2>
-            <p class="mat-body-1">Our team of industry veterans and technology experts ensures reliable, high-quality
-                service.</p>
+            <h2>{{ 'HOME.EXPERTISE.TITLE' | translate }}</h2>
+            <p>{{ 'HOME.EXPERTISE.DESCRIPTION' | translate }}</p>
         </div>
-        <img src="/working-room.jpg" alt="engineers working together">
-
+        <img src="/working-room.jpg" alt="{{ 'HOME.EXPERTISE.IMAGE_ALT' | translate }}" />
         <div class="technologies">
-            <app-feature-list title="Key Technologies and Expertise" [features]="key_techs"></app-feature-list>
+            <app-feature-list title="{{ 'HOME.EXPERTISE.TITLE' | translate }}" [features]="keyTechs"></app-feature-list>
         </div>
     </section>
 
     <section class="success-stories">
         <div class="inline-padding">
-            <h2>Success Stories</h2>
-            <p>Discover how our expertise has empowered businesses to achieve remarkable outcomes.</p>
+            <h2>{{ 'HOME.SUCCESS_STORIES.TITLE' | translate }}</h2>
+            <p>{{ 'HOME.SUCCESS_STORIES.DESCRIPTION' | translate }}</p>
             <div class="testimonials">
-                <app-card-testimonial
-                    testimonial="TechAdvancer’s solutions transformed our workforce efficiency by over 30%. The team’s expertise and support were exceptional."
-                    client="– Jane Doe, Operations Manager, FinTech Corp">
-                </app-card-testimonial>
-
-                <app-card-testimonial
-                    testimonial="The AI-driven tools provided by TechAdvancer have streamlined our operations, enabling us to focus on scaling our business."
-                    client="– John Smith, CEO, RetailTech Solutions">
+                <app-card-testimonial *ngFor="let testimonial of successStories"
+                    [testimonial]="testimonial.text | translate" [client]="testimonial.client | translate">
                 </app-card-testimonial>
             </div>
         </div>
@@ -89,23 +72,24 @@
 
     <section class="explore-links">
         <div class="inline-padding">
-            <h2 class="mat-headline-medium">Explore More</h2>
-            <p>Discover more about our offerings and how we can help your business thrive:</p>
+            <h2>{{ 'HOME.EXPLORE_LINKS.TITLE' | translate }}</h2>
+            <p>{{ 'HOME.EXPLORE_LINKS.DESCRIPTION' | translate }}</p>
             <ul class="explore-links-list">
                 <li *ngFor="let link of exploreLinks">
-                    <a [href]="link.url" class="explore-link mat-body-2">{{ link.text }}</a>
+                    <a [href]="link.url" class="explore-link">{{ link.text | translate }}</a>
                 </li>
             </ul>
         </div>
     </section>
 
-
     <section class="contact-prompt">
         <div class="inline-padding">
-            <h2 class="mat-headline-medium">Contact Us</h2>
-            <p class="mat-body-1">Have questions? Our team is here to help. Reach out to us today, and let’s discuss how
-                we can assist with your goals.</p>
-            <a href="/contact-us" class="mat-flat-button mat-primary-button">Get in Touch</a>
+            <h2>{{ 'HOME.CONTACT_PROMPT.TITLE' | translate }}</h2>
+            <p>{{ 'HOME.CONTACT_PROMPT.DESCRIPTION' | translate }}</p>
+            <a href="/contact-us" class="mat-flat-button mat-primary-button">
+                {{ 'HOME.CONTACT_PROMPT.BUTTON_TEXT' | translate }}
+            </a>
         </div>
     </section>
+
 </main>
