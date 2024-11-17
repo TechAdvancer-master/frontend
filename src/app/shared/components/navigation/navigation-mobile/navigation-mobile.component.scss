@@ -1,5 +1,16 @@
 .container {
     width: 50vw;
+    min-width: 300px;
+}
+
+.header {
+  padding: 2rem 1rem;
+  display: flex;
+  gap: 8px;
+
+  & > *:nth-child(2) {
+    margin-inline-start: auto;
+  }
 }
 
 .links {   

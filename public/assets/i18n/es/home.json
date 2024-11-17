@@ -1,0 +1,122 @@
+{
+  "HOME": {
+    "BANNER": {
+      "TITLE": "Empoderando a las empresas con soluciones de IA",
+      "DESCRIPTION": "Nuestra experiencia asegura el éxito de cada proyecto."
+    },
+    "PURPOSE": {
+      "TITLE": "Nuestro propósito",
+      "DESCRIPTION": "En TechAdvancer, creemos en empoderar a las empresas para prosperar a través de soluciones avanzadas impulsadas por IA y talento de clase mundial. Desde mejorar las capacidades del equipo hasta entregar soluciones de software personalizadas, nuestros servicios están diseñados para fomentar el éxito en cada proyecto.",
+      "IMAGE_ALT": "mujer IA"
+    },
+    "SERVICES": {
+      "TITLE": "Nuestros servicios principales",
+      "EXPERT_CONNECT": {
+        "TITLE": "Conexión de Expertos",
+        "DESCRIPTION": "Conectamos a nuestros clientes con especialistas de clase mundial",
+        "HREF": "services/expert-connect",
+        "ICON": "/icons/expert-connect.svg"
+      },
+      "TALENT_FUSION": {
+        "TITLE": "Fusión de Talento",
+        "DESCRIPTION": "Aseguramos la formación de equipos de alto rendimiento",
+        "HREF": "services/talent-fusion",
+        "ICON": "/icons/talent-fusion.svg"
+      },
+      "SKILL_LAB": {
+        "TITLE": "Laboratorio de Habilidades",
+        "DESCRIPTION": "Nos enfocamos en mejorar y readaptar las habilidades de los desarrolladores",
+        "HREF": "services/skill-lab",
+        "ICON": "/icons/skill-lab.svg"
+      },
+      "TECH_FORGE": {
+        "TITLE": "Tech-Forge",
+        "DESCRIPTION": "Programas de capacitación integral en Front-End y Back-End",
+        "HREF": "services/tech-forge",
+        "ICON": "/icons/tech-forge.svg"
+      },
+      "CLOUD_SERVICES": {
+        "TITLE": "Servicios en la Nube",
+        "DESCRIPTION": "Gestionamos entornos multicloud",
+        "HREF": "services/cloud-services",
+        "ICON": "/icons/cloud-services.svg"
+      }
+    },
+    "PRODUCTS": {
+      "TITLE": "Nuestros productos principales",
+      "DESCRIPTION": "Descubra nuestros productos innovadores que están transformando empresas en todo el mundo.",
+      "BUSINESS_PULSE": {
+        "TITLE": "Pulso Empresarial",
+        "DESCRIPTION": "Nuestra plataforma inteligente proporciona información en tiempo real sobre la productividad y eficiencia de la fuerza laboral, asegurando el uso óptimo de los recursos y la transparencia.",
+        "HREF": "products/business-pulse"
+      },
+      "SMART_BOTS": {
+        "TITLE": "Bots Inteligentes",
+        "DESCRIPTION": "Eleve las experiencias de los clientes con chatbots impulsados por IA de vanguardia",
+        "HREF": "products/smart-bots"
+      }
+    },
+    "WHY_CHOOSE_US": {
+      "TITLE": "Por qué elegir TechAdvancer",
+      "DESCRIPTION": "Aquí está por qué asociarse con TechAdvancer puede impulsar el éxito de su negocio:",
+      "POINTS": {
+        "INNOVATION_DRIVEN": {
+          "TITLE": "Impulsados por la Innovación",
+          "DESCRIPTION": "Siempre a la vanguardia de los avances en IA para ofrecer soluciones de próxima generación."
+        },
+        "CLIENT_CENTRIC": {
+          "TITLE": "Enfoque Centrado en el Cliente",
+          "DESCRIPTION": "Adaptamos cada solución para satisfacer las necesidades únicas de cada cliente, asegurando resultados significativos."
+        }
+      }
+    },
+    "EXPERTISE": {
+      "TITLE": "Experiencia Comprobada",
+      "DESCRIPTION": "Nuestro equipo de veteranos de la industria y expertos en tecnología garantiza un servicio confiable y de alta calidad.",
+      "IMAGE_ALT": "ingenieros trabajando juntos",
+      "KEY_TECHS": {
+        "AI": {
+          "TITLE": "IA y Aprendizaje Automático",
+          "DESCRIPTION": "Herramientas avanzadas impulsadas por IA para análisis predictivos, automatización de procesos y soporte para la toma de decisiones."
+        },
+        "CLOUD": {
+          "TITLE": "Integración en la Nube",
+          "DESCRIPTION": "Integración perfecta de soluciones en la nube para una gestión de datos escalable y segura."
+        },
+        "SOFTWARE": {
+          "TITLE": "Desarrollo de Software Personalizado",
+          "DESCRIPTION": "Soluciones de software diseñadas para satisfacer las necesidades únicas de su negocio."
+        }
+      }
+    },
+    "SUCCESS_STORIES": {
+      "TITLE": "Historias de Éxito",
+      "DESCRIPTION": "Descubra cómo nuestra experiencia ha empoderado a las empresas para lograr resultados notables.",
+      "TESTIMONIALS": [
+        {
+          "TEXT": "Las soluciones de TechAdvancer transformaron la eficiencia de nuestra fuerza laboral en más del 30 %. La experiencia y el apoyo del equipo fueron excepcionales.",
+          "CLIENT": "– Jane Doe, Gerente de Operaciones, FinTech Corp"
+        },
+        {
+          "TEXT": "Las herramientas impulsadas por IA proporcionadas por TechAdvancer han optimizado nuestras operaciones, lo que nos permite centrarnos en escalar nuestro negocio.",
+          "CLIENT": "– John Smith, CEO, RetailTech Solutions"
+        }
+      ]
+    },
+    "EXPLORE_LINKS": {
+      "TITLE": "Explorar Más",
+      "DESCRIPTION": "Descubra más sobre nuestras ofertas y cómo podemos ayudar a su negocio a prosperar:",
+      "LINKS": {
+        "ABOUT_US": "Aprenda más sobre nuestra historia en Acerca de Nosotros.",
+        "SERVICES": "Vea nuestra gama completa de servicios.",
+        "PRODUCTS": "Descubra cómo nuestros productos pueden transformar su negocio.",
+        "CONTACT_US": "¿Listo para conectar? Contáctenos hoy."
+      }
+    },
+    "CONTACT_PROMPT": {
+      "TITLE": "Contáctenos",
+      "DESCRIPTION": "¿Tiene preguntas? Nuestro equipo está aquí para ayudarlo. Contáctenos hoy y hablemos de cómo podemos ayudarle con sus objetivos.",
+      "BUTTON_TEXT": "Póngase en Contacto"
+    }
+  }
+}

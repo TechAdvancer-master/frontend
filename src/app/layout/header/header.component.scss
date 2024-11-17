@@ -38,7 +38,7 @@
 }
 
 .mobile-menu {
-    // transform: translateX(-100%);
+    transform: translateX(-100%);
     position: fixed;
     transition: all 0.3s ease-in-out ;
     top: var(--header-height);

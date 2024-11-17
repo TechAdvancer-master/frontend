@@ -1,0 +1,11 @@
+<div class="language-switcher">
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="glassmorphism">
+        <mat-icon>language</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item *ngFor="let lang of languages" (click)="changeLanguage(lang.code)"
+            [disabled]="lang.code === currentLanguage">
+            {{ lang.label }}
+        </button>
+    </mat-menu>
+</div>
