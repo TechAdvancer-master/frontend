@@ -1,8 +1,8 @@
 <main>
   <img src="/contact-us.jpg" alt="contact-us" class="hero-image">
   <div class="hero-section responsive-padding">
-    <h1>{{ 'CONTACT_US.HERO.TITLE' | translate }}</h1>
-    <p>{{ 'CONTACT_US.HERO.DESCRIPTION' | translate }}</p>
+    <h1>{{ hero_title }}</h1>
+    <p>{{ hero_description }}</p>
   </div>
 
   <div class="contact-form">
@@ -10,7 +10,7 @@
   </div>
 
   <section class="faqs-section responsive-padding">
-    <h2>{{ 'CONTACT_US.FAQS.TITLE' | translate }}</h2>
+    <h2>{{ faqs_title }}</h2>
     <mat-accordion>
       <mat-expansion-panel *ngFor="let faq of faqs">
         <mat-expansion-panel-header>
@@ -24,8 +24,8 @@
   </section>
 
   <div class="business-hours-section responsive-padding">
-    <h2>{{ 'CONTACT_US.BUSINESS_HOURS.TITLE' | translate }}</h2>
-    <p>{{ 'CONTACT_US.BUSINESS_HOURS.DESCRIPTION' | translate }}</p>
+    <h2>{{ business_hours_title }}</h2>
+    <p>{{ business_hours_description }}</p>
     <ul>
       <li *ngFor=" let hour of businessHours">
         <strong>{{ hour.DAY }}:</strong> {{ hour.HOURS }}

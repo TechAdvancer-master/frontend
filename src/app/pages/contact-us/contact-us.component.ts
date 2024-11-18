@@ -17,6 +17,12 @@ import { takeUntil } from 'rxjs/operators';
 export class ContactUsComponent implements OnInit, OnDestroy {
   faqs: { QUESTION: string; ANSWER: string }[] = [];
   businessHours: { DAY: string; HOURS: string }[] = [];
+  hero_title = '';
+  hero_description = ''
+  faqs_title = ''
+  business_hours_title = ''
+  business_hours_description = ''
+
   private destroy$ = new Subject<void>();
 
   constructor(@Inject(TranslationService) private translationService: TranslationService) { }
@@ -30,7 +36,12 @@ export class ContactUsComponent implements OnInit, OnDestroy {
   }
 
   private loadPageTranslations(): void {
-    this.translationService.loadPageTranslations('contact-us').then((translations) => {
+    this.translationService.loadPageTranslations('contactus').then((translations) => {
+      this.hero_title = translations.CONTACT_US.HERO.TITLE;
+      this.hero_description = translations.CONTACT_US.HERO.DESCRIPTION;
+      this.faqs_title = translations.CONTACT_US.FAQS.TITLE;
+      this.business_hours_title = translations.CONTACT_US.BUSINESS_HOURS.TITLE;
+      this.business_hours_description = translations.CONTACT_US.BUSINESS_HOURS.DESCRIPTION;
       this.faqs = translations['CONTACT_US']['FAQS']['ITEMS'] || [];
       this.businessHours = translations['CONTACT_US']['BUSINESS_HOURS']['ITEMS'] || [];
     });
