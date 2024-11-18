@@ -1,0 +1,30 @@
+{
+    "FORMS": {
+      "CONTACT_US": {
+        "TITLE": "Contáctanos",
+        "NAME": {
+          "LABEL": "Nombre",
+          "ERRORS": {
+            "REQUIRED": "El nombre es obligatorio.",
+            "MINLENGTH": "El nombre debe tener al menos 2 caracteres."
+          }
+        },
+        "EMAIL": {
+          "LABEL": "Correo Electrónico",
+          "ERRORS": {
+            "REQUIRED": "El correo electrónico es obligatorio.",
+            "INVALID": "Ingrese un correo electrónico válido."
+          }
+        },
+        "MESSAGE": {
+          "LABEL": "Mensaje",
+          "ERRORS": {
+            "REQUIRED": "El mensaje es obligatorio.",
+            "MINLENGTH": "El mensaje debe tener al menos 10 caracteres."
+          }
+        },
+        "SUBMIT_BUTTON": "Enviar"
+      }
+    }
+  }
+  

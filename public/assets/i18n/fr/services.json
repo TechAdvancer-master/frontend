@@ -1,1 +1,121 @@
-{}
+{
+  "SERVICES": {
+    "TITLE": "Nos Services Principaux",
+    "DESCRIPTION": "Découvrez notre gamme complète de services conçus pour faire progresser votre entreprise.",
+    "EXPERT_CONNECT": {
+      "TITLE": "Connexion avec des Experts",
+      "DESCRIPTION": "Nous connectons nos clients avec des spécialistes de classe mondiale.",
+      "LONG_DESCRIPTION": "Expert Connect comble le fossé entre les entreprises et les experts de premier plan dans divers domaines. Qu'il s'agisse d'IA, d'informatique en nuage ou de développement logiciel, nos spécialistes apportent une richesse d'expérience et des solutions innovantes pour relever vos défis uniques. Nous offrons des modèles d'engagement flexibles pour garantir une solution adaptée aux besoins de votre entreprise.",
+      "FEATURES": [
+        "Accès à un réseau mondial de spécialistes de l'industrie.",
+        "Solutions personnalisées adaptées aux défis de l'entreprise.",
+        "Modèles flexibles de conseil et d'accompagnement."
+      ],
+      "IDEAL_FOR": [
+        "Entreprises ayant besoin d'une expertise spécialisée pour des projets à court terme.",
+        "Organisations cherchant à innover et à résoudre des problèmes complexes.",
+        "Entreprises cherchant à compléter leurs équipes avec des compétences spécifiques."
+      ],
+      "HREF": "services/expert-connect",
+      "ICON": "/icons/expert-connect.svg",
+      "ALT": "Connexion avec des Experts",
+      "TECH_STACK": ["IA", "Apprentissage Automatique", "Big Data", "Kubernetes", "Docker", "Java", "Python", "Node.js", "React", "Angular", "AWS", "Azure"],
+      "STATISTICS": [
+        "10 000 heures de conseils d'experts fournies.",
+        "300+ clients soutenus avec succès."
+      ]
+    },
+    "TALENT_FUSION": {
+      "TITLE": "Fusion des Talents",
+      "DESCRIPTION": "Nous assurons la formation d'équipes performantes.",
+      "LONG_DESCRIPTION": "Talent Fusion se spécialise dans la création d'équipes performantes et cohésives, adaptées aux défis modernes des entreprises. Notre méthodologie garantit que chaque membre de l'équipe complète les compétences des autres, favorisant la collaboration et l'innovation.",
+      "FEATURES": [
+        "Conception et assemblage d'équipes adaptées aux besoins des projets.",
+        "Accent mis sur la collaboration et la synergie.",
+        "Optimisation continue des performances des équipes."
+      ],
+      "IDEAL_FOR": [
+        "Startups en pleine croissance rapide.",
+        "Entreprises en transition vers des méthodologies agiles.",
+        "Organisations nécessitant des équipes projet spécialisées."
+      ],
+      "HREF": "services/talent-fusion",
+      "ICON": "/icons/talent-fusion.svg",
+      "ALT": "Fusion des Talents",
+      "TECH_STACK": ["Outils de Collaboration", "Jira", "Confluence", "Slack", "Zoom", "Trello"],
+      "STATISTICS": [
+        "200+ équipes assemblées pour des projets à grande échelle.",
+        "98% de satisfaction client pour la construction d'équipes."
+      ]
+    },
+    "SKILL_LAB": {
+      "TITLE": "Skill Lab",
+      "DESCRIPTION": "Des laboratoires pratiques pour le perfectionnement et la reconversion des développeurs avec des programmes diplômants.",
+      "LONG_DESCRIPTION": "Skill Lab est votre porte d'entrée pour maîtriser un large éventail de technologies. Nos laboratoires intensifs et pratiques sont conçus pour équiper les développeurs avec les compétences nécessaires pour réussir dans l'industrie technologique.",
+      "FEATURES": [
+        "Large éventail de laboratoires couvrant des technologies en demande.",
+        "Apprentissage pratique basé sur des projets.",
+        "Diplôme décerné à l'issue de la formation."
+      ],
+      "IDEAL_FOR": [
+        "Développeurs souhaitant élargir leurs compétences techniques.",
+        "Équipes cherchant à améliorer leur productivité grâce à de nouvelles compétences.",
+        "Organisations investissant dans des programmes de formation continue pour leurs employés."
+      ],
+      "HREF": "services/skill-lab",
+      "ICON": "/icons/skill-lab.svg",
+      "ALT": "Skill Lab",
+      "TECH_STACK": ["React", "Angular", "Node.js", "Python", "IA", "Data Science"],
+      "STATISTICS": [
+        "500+ équipes perfectionnées.",
+        "98% de taux de satisfaction parmi les participants."
+      ]
+    },
+    "TECH_FORGE": {
+      "TITLE": "Tech-Forge",
+      "DESCRIPTION": "Programmes de formation spécifiques pour les certifications comme AWS, Azure, et plus encore.",
+      "LONG_DESCRIPTION": "Tech-Forge propose des formations spécialisées pour les certifications des technologies leaders de l'industrie telles qu'AWS, Azure et Google Cloud.",
+      "FEATURES": [
+        "Préparation complète pour les certifications.",
+        "Formation approfondie dispensée par des instructeurs certifiés.",
+        "Accès à des examens simulés et des cas d'utilisation réels."
+      ],
+      "IDEAL_FOR": [
+        "Professionnels IT poursuivant des certifications reconnues.",
+        "Organisations formant leurs équipes dans des technologies certifiées.",
+        "Étudiants entrant dans l'industrie technologique avec un objectif de certification."
+      ],
+      "HREF": "services/tech-forge",
+      "ICON": "/icons/tech-forge.svg",
+      "ALT": "Tech Forge",
+      "TECH_STACK": ["AWS Certified Solutions Architect", "Azure DevOps", "Google Cloud Certification"],
+      "STATISTICS": [
+        "200+ certifications obtenues grâce à nos formations.",
+        "95% de réussite aux examens parmi les participants."
+      ]
+    },
+    "CLOUD_SERVICES": {
+      "TITLE": "Services Cloud",
+      "DESCRIPTION": "Nous gérons des environnements multi-cloud.",
+      "LONG_DESCRIPTION": "Cloud Services offre une gestion complète des infrastructures multi-clouds, garantissant une intégration, une évolutivité et une sécurité transparentes.",
+      "FEATURES": [
+        "Gestion d'environnements multi-cloud.",
+        "Solutions complètes de migration et de déploiement.",
+        "Optimisation des performances et gestion des coûts."
+      ],
+      "IDEAL_FOR": [
+        "Entreprises migrant pour la première fois vers le cloud.",
+        "Organisations optimisant les environnements multi-clouds.",
+        "Entreprises recherchant une sécurité et une conformité robustes dans le cloud."
+      ],
+      "HREF": "services/cloud-services",
+      "ICON": "/icons/cloud-services.svg",
+      "ALT": "Services Cloud",
+      "TECH_STACK": ["AWS", "Azure", "Google Cloud", "Kubernetes", "Docker", "Terraform"],
+      "STATISTICS": [
+        "99,9% de disponibilité pour les environnements cloud gérés.",
+        "300+ migrations réussies vers le cloud."
+      ]
+    }
+  }
+}

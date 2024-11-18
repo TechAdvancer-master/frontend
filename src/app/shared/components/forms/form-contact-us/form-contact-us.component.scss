@@ -1,0 +1,24 @@
+.container {
+    width: max-content;
+    max-width: 400px;
+    height: max-content;
+    padding: 1rem 0.25rem ;
+    margin: 0 auto;
+    border-radius: 0 0 var(--border-radius-small) var(--border-radius-small);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

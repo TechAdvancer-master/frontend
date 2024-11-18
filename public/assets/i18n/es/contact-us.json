@@ -1,1 +1,40 @@
-{}
+{
+    "CONTACT_US": {
+      "HERO": {
+        "TITLE": "Ponte en Contacto con Nosotros",
+        "DESCRIPTION": "Nos encantaría saber de ti. Ya sea que tengas preguntas, comentarios o necesites ayuda, ¡nuestro equipo está aquí para ayudarte!"
+      },
+      "FAQS": {
+        "TITLE": "Preguntas Frecuentes",
+        "ITEMS": [
+          {
+            "QUESTION": "¿Cuáles son sus horarios de atención?",
+            "ANSWER": "Estamos abiertos de lunes a viernes, de 9:00 AM a 6:00 PM."
+          },
+          {
+            "QUESTION": "¿Dónde están ubicados?",
+            "ANSWER": "Nuestra oficina principal está ubicada en la calle TechAdvancer 123, Suite 456, Ciudad, País."
+          },
+          {
+            "QUESTION": "¿Cuánto tiempo tardan en responder?",
+            "ANSWER": "Nuestro equipo se esfuerza por responder a todas las consultas en un plazo de 24 horas."
+          }
+        ]
+      },
+      "BUSINESS_HOURS": {
+        "TITLE": "Horarios de Atención",
+        "DESCRIPTION": "No dudes en contactarnos durante nuestro horario de atención:",
+        "ITEMS": [
+          { "DAY": "Lunes–Viernes", "HOURS": "9:00 AM – 6:00 PM" },
+          { "DAY": "Sábado", "HOURS": "10:00 AM – 2:00 PM" },
+          { "DAY": "Domingo", "HOURS": "Cerrado" }
+        ]
+      },
+      "PRIVACY": {
+        "TITLE": "Información de Privacidad",
+        "DESCRIPTION": "Valoramos tu privacidad y estamos comprometidos a proteger tus datos personales. Aprende más sobre cómo manejamos tu información.",
+        "LINK_TEXT": "Lee nuestra Política de Privacidad"
+      }
+    }
+  }
+  

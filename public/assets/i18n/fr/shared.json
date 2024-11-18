@@ -1,1 +1,24 @@
-{}
+{
+    "HEADER": {
+      "MENU": "Menu",
+      "CONTACT_US": "Contactez-nous"
+    },
+    "NAVIGATION": {
+      "HOME": "Accueil",
+      "SERVICES": "Nos Services",
+      "ABOUT_US": "À Propos de Nous",
+      "CONTACT_US": "Contactez-Nous"
+    },
+    "FOOTER": {
+      "CONTACT": {
+        "ADDRESS_LABEL": "Adresse",
+        "ADDRESS": "123 TechAdvancer St., Ville de l'Innovation",
+        "PHONE_LABEL": "Téléphone",
+        "PHONE": "+123-456-7890",
+        "EMAIL_LABEL": "Courriel",
+        "EMAIL": "contact@TechAdvancer.com"
+      },
+      "PRIVACY_POLICY": "Politique de Confidentialité"
+    }
+  }
+  

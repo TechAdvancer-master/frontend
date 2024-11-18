@@ -1,0 +1,22 @@
+.hero-image {
+    width: 100vw;
+    aspect-ratio: 16/9;
+}
+
+.contact-form {
+    display: grid;
+    place-content: center;
+}
+
+.faqs-section {
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+}
+
+.business-hours-section {
+    background-image: var(--dark-purple-to-black-radial-gradient);
+    background-position: 20vw -50vw;
+    background-size: 80vw 100vw;
+    background-repeat: no-repeat;
+}

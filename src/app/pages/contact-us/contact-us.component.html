@@ -1,107 +1,43 @@
-<h1>Contact Us</h1>
-<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-  <label>
-    Name:
-    <input formControlName="name">
-  </label>
-  <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
-    Name is required (max 50 characters).
+<main>
+  <img src="/contact-us.jpg" alt="contact-us" class="hero-image">
+  <div class="hero-section responsive-padding">
+    <h1>{{ 'CONTACT_US.HERO.TITLE' | translate }}</h1>
+    <p>{{ 'CONTACT_US.HERO.DESCRIPTION' | translate }}</p>
   </div>
 
-  <label>
-    Email:
-    <input formControlName="email">
-  </label>
-  <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
-    Valid email is required.
+  <div class="contact-form">
+    <app-form-contact-us></app-form-contact-us>
   </div>
 
-  <label>
-    Message:
-    <textarea formControlName="message"></textarea>
-  </label>
-  <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
-    Message is required.
+  <section class="faqs-section responsive-padding">
+    <h2>{{ 'CONTACT_US.FAQS.TITLE' | translate }}</h2>
+    <mat-accordion>
+      <mat-expansion-panel *ngFor="let faq of faqs">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ faq.QUESTION }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>{{ faq.ANSWER }}</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </section>
+
+  <div class="business-hours-section responsive-padding">
+    <h2>{{ 'CONTACT_US.BUSINESS_HOURS.TITLE' | translate }}</h2>
+    <p>{{ 'CONTACT_US.BUSINESS_HOURS.DESCRIPTION' | translate }}</p>
+    <ul>
+      <li *ngFor=" let hour of businessHours">
+        <strong>{{ hour.DAY }}:</strong> {{ hour.HOURS }}
+      </li>
+    </ul>
   </div>
 
-  <button type="submit" [disabled]="contactForm.invalid">Send</button>
-</form>
-
-
-Introduction / Welcome Section
-
-Headline: “Let’s Connect and Collaborate”
-Subheadline: “Our team is here to support your business needs and answer any questions.”
-Brief Introduction: A few sentences to welcome visitors and explain the purpose of the page.
-Example Text: “Whether you're looking to enhance your team, implement cutting-edge technology, or simply have questions about our services, we’re here to help. Connect with us today, and let’s work together to achieve your goals.”
-Contact Information Section
-
-Address: Include the physical address of the company headquarters or main office.
-
-Phone Number: Provide a primary phone number for immediate assistance.
-
-Email: Add a general contact email for inquiries.
-
-Office Hours: State when the team is available for inquiries (e.g., “Available Monday to Friday, 9 AM - 6 PM”).
-
-Example Layout:
-
-Address: 123 TechAdvancer St., Innovation City
-Phone: +123-456-7890
-Email: contact&#64;TechAdvancer.com
-Office Hours: Monday to Friday, 9 AM - 6 PM (Your Time Zone)
-Contact Form Section
-
-Form Title: “Send Us a Message”
-Form Fields: Include fields that make it easy to collect relevant information for follow-up.
-Name: Required field for identifying the visitor.
-Email: Required field to ensure the team can respond.
-Phone (Optional): For those who prefer a phone follow-up.
-Subject: Short text field for the visitor to describe their reason for reaching out.
-Message: A larger text area for detailed inquiries or messages.
-Privacy Statement: Brief note indicating that the information shared will remain confidential and will only be used for follow-up purposes.
-Button: A clear “Submit” button with a confirmation message or success alert upon submission.
-Map Section (Optional)
-
-Embedded Map: Include a Google Map showing the company’s physical location to make it easier for visitors to find your office.
-Example Text: “Visit our office and let’s discuss your project in person. Find us here:”
-Social Media Links
-
-Connect With Us: Invite visitors to connect with your brand on social media.
-Social Media Platforms: Include icons and links to LinkedIn, Twitter, Facebook, or other relevant platforms.
-Example Text: “Follow us on social media to stay updated with our latest services, industry news, and insights.”
-FAQs Section (Optional)
-
-Common Questions: Include 3-5 common questions and answers that could help visitors.
-Example Questions:
-“How soon can I expect a response to my inquiry?” (Answer: Typically within 24 business hours.)
-“Do you offer international services?” (Answer: Yes, our team serves clients globally.)
-“What information should I provide to get a service quote?” (Answer: Please include details about your project, desired services, and timeline.)
-Call to Action
-
-Encouraging Text: Prompt visitors to complete the form or call directly for immediate inquiries.
-Example Text: “Ready to get started? Reach out to us today, and let’s discuss how TechAdvancer can support your success. We’re excited to connect with you!”
-Example Layout
-Contact Us
-
-Let’s Connect and Collaborate
-Our team is here to support your business needs and answer any questions.
-
-Address: 123 TechAdvancer St., Innovation City
-Phone: +123-456-7890
-Email: contact&#64;TechAdvancer.com
-Office Hours: Monday to Friday, 9 AM - 6 PM (Your Time Zone)
-Send Us a Message
-
-Field	Description
-Name	Required
-Email	Required
-Phone	Optional
-Subject	Brief description
-Message	Detailed inquiry or message
-Submit Button
-
-Connect With Us
-Follow us on social media to stay updated:
-
-LinkedIn, Twitter, Facebook
+  <!-- <div class="privacy-section">
+    <h2>{{ 'CONTACT_US.PRIVACY.TITLE' | translate }}</h2>
+    <p>{{ 'CONTACT_US.PRIVACY.DESCRIPTION' | translate }}</p>
+    <a [routerLink]="['/privacy-policy']" class="privacy-link">
+      {{ 'CONTACT_US.PRIVACY.LINK_TEXT' | translate }}
+    </a>
+  </div> -->
+</main>

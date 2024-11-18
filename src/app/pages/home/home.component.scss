@@ -1,13 +1,3 @@
-.main {
-    background-color: var(--black);
-    color: var(--white);
-    border: 1px solid transparent;
-}   
-
-.inline-padding {
-    padding: 1rem 1rem;
-}
-
 .img {
     width: 100%;
 }
@@ -29,7 +19,7 @@
         z-index: 1; 
       }
 
-      & .inline-padding > * {
+      & .responsive-padding > * {
         position: relative;
         z-index: 2;
       }
@@ -43,7 +33,7 @@
       }
 }
 
-
+// extract this into a mixin
 .choose-us {
     background-image: var(--dark-purple-to-black-radial-gradient);
     background-position: 20vw -50vw;

@@ -1,6 +1,4 @@
-// src/app/home/home.component.ts
 import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
-// import { TranslationService } from 'src/app/core/services/translation.service';
 import { CarouselComponent } from '../../shared/components/carousel/carousel.component';
 import { CardServiceComponent } from '../../shared/components/card/card-service/card-service.component';
 import { CommonModule } from '@angular/common';
@@ -46,7 +44,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.loadPageTranslations();
 
-    // Reapply translations if the language changes
     this.translationService.onLanguageChange()
       .pipe(takeUntil(this.destroy$))
       .subscribe(() => this.loadPageTranslations());
@@ -54,39 +51,6 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   private loadPageTranslations(): void {
     this.translationService.loadPageTranslations('home').then((translations) => {
-      this.services = [
-        {
-          icon: '/icons/expert-connect.svg',
-          title: translations.HOME.SERVICES.EXPERT_CONNECT.TITLE,
-          description: translations.HOME.SERVICES.EXPERT_CONNECT.DESCRIPTION,
-          href: 'services/expert-connect',
-        },
-        {
-          icon: '/icons/talent-fusion.svg',
-          title: translations.HOME.SERVICES.TALENT_FUSION.TITLE,
-          description: translations.HOME.SERVICES.TALENT_FUSION.DESCRIPTION,
-          href: 'services/talent-fusion',
-        },
-        {
-          icon: '/icons/skill-lab.svg',
-          title: translations.HOME.SERVICES.SKILL_LAB.TITLE,
-          description: translations.HOME.SERVICES.SKILL_LAB.DESCRIPTION,
-          href: 'services/skill-lab',
-        },
-        {
-          icon: '/icons/tech-forge.svg',
-          title: translations.HOME.SERVICES.TECH_FORGE.TITLE,
-          description: translations.HOME.SERVICES.TECH_FORGE.DESCRIPTION,
-          href: 'services/tech-forge',
-        },
-        {
-          icon: '/icons/cloud-services.svg',
-          title: translations.HOME.SERVICES.CLOUD_SERVICES.TITLE,
-          description: translations.HOME.SERVICES.CLOUD_SERVICES.DESCRIPTION,
-          href: 'services/cloud-services',
-        },
-      ];
-
       this.products = [
         {
           title: translations.HOME.PRODUCTS.BUSINESS_PULSE.TITLE,
@@ -137,6 +101,15 @@ export class HomeComponent implements OnInit, OnDestroy {
         { text: translations.HOME.EXPLORE_LINKS.PRODUCTS, url: '/products' },
         { text: translations.HOME.EXPLORE_LINKS.CONTACT_US, url: '/contact-us' },
       ];
+    });
+
+    this.translationService.loadPageTranslations('services').then((translations) => {
+      this.services = Object.values(translations.SERVICES).filter(service => typeof service !== 'string').map((service: any) => ({
+        icon: service.ICON,
+        title: service.TITLE,
+        description: service.DESCRIPTION,
+        href: service.HREF,
+      }));
     });
   }
 

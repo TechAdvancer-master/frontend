@@ -9,39 +9,7 @@
       "DESCRIPTION": "Chez TechAdvancer, nous croyons en la capacité des entreprises à prospérer grâce à des solutions avancées basées sur l'IA et à des talents de classe mondiale. Qu'il s'agisse de renforcer les capacités des équipes ou de fournir des solutions logicielles sur mesure, nos services sont conçus pour favoriser le succès de chaque projet.",
       "IMAGE_ALT": "femme IA"
     },
-    "SERVICES": {
-      "TITLE": "Nos Services Principaux",
-      "EXPERT_CONNECT": {
-        "TITLE": "Connexion d'Experts",
-        "DESCRIPTION": "Nous connectons nos clients à des spécialistes de classe mondiale",
-        "HREF": "services/expert-connect",
-        "ICON": "/icons/expert-connect.svg"
-      },
-      "TALENT_FUSION": {
-        "TITLE": "Fusion de Talents",
-        "DESCRIPTION": "Nous assurons la formation d'équipes performantes",
-        "HREF": "services/talent-fusion",
-        "ICON": "/icons/talent-fusion.svg"
-      },
-      "SKILL_LAB": {
-        "TITLE": "Laboratoire de Compétences",
-        "DESCRIPTION": "Nous nous concentrons sur l'amélioration et la reconversion des développeurs",
-        "HREF": "services/skill-lab",
-        "ICON": "/icons/skill-lab.svg"
-      },
-      "TECH_FORGE": {
-        "TITLE": "Forge Technologique",
-        "DESCRIPTION": "Programmes de formation complets en développement Front-End et Back-End",
-        "HREF": "services/tech-forge",
-        "ICON": "/icons/tech-forge.svg"
-      },
-      "CLOUD_SERVICES": {
-        "TITLE": "Services Cloud",
-        "DESCRIPTION": "Nous gérons des environnements multi-cloud",
-        "HREF": "services/cloud-services",
-        "ICON": "/icons/cloud-services.svg"
-      }
-    },
+
     "PRODUCTS": {
       "TITLE": "Nos produits principaux",
       "DESCRIPTION": "Découvrez nos produits innovants qui transforment les entreprises dans le monde entier.",
@@ -75,6 +43,7 @@
       "DESCRIPTION": "Notre équipe de vétérans de l'industrie et d'experts en technologie garantit un service fiable et de haute qualité.",
       "IMAGE_ALT": "ingénieurs travaillant ensemble",
       "KEY_TECHS": {
+        "TITLE": "Technologies Clés et Expertise",
         "AI": {
           "TITLE": "IA & Apprentissage Automatique",
           "DESCRIPTION": "Outils avancés basés sur l'IA pour l'analyse prédictive, l'automatisation des processus et l'aide à la décision."

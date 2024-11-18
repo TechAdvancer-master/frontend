@@ -1,0 +1,53 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="container">
+    <mat-card class="card">
+        <mat-card-title>{{ 'FORMS.CONTACT_US.TITLE' | translate }}</mat-card-title>
+        <mat-card-content class="content">
+            <!-- Name Input -->
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>{{ 'FORMS.CONTACT_US.NAME.LABEL' | translate }}</mat-label>
+                <input matInput id="name" formControlName="name" />
+                <mat-error *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+                    <span *ngIf="contactForm.get('name')?.errors?.['required']">
+                        {{ 'FORMS.CONTACT_US.NAME.ERRORS.REQUIRED' | translate }}
+                    </span>
+                    <span *ngIf="contactForm.get('name')?.errors?.['minlength']">
+                        {{ 'FORMS.CONTACT_US.NAME.ERRORS.MINLENGTH' | translate }}
+                    </span>
+                </mat-error>
+            </mat-form-field>
+
+            <!-- Email Input -->
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>{{ 'FORMS.CONTACT_US.EMAIL.LABEL' | translate }}</mat-label>
+                <input matInput id="email" type="email" formControlName="email" />
+                <mat-error *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+                    <span *ngIf="contactForm.get('email')?.errors?.['required']">
+                        {{ 'FORMS.CONTACT_US.EMAIL.ERRORS.REQUIRED' | translate }}
+                    </span>
+                    <span *ngIf="contactForm.get('email')?.errors?.['email']">
+                        {{ 'FORMS.CONTACT_US.EMAIL.ERRORS.INVALID' | translate }}
+                    </span>
+                </mat-error>
+            </mat-form-field>
+
+            <!-- Message Input -->
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>{{ 'FORMS.CONTACT_US.MESSAGE.LABEL' | translate }}</mat-label>
+                <textarea matInput id="message" formControlName="message" rows="5"></textarea>
+                <mat-error *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+                    <span *ngIf="contactForm.get('message')?.errors?.['required']">
+                        {{ 'FORMS.CONTACT_US.MESSAGE.ERRORS.REQUIRED' | translate }}
+                    </span>
+                    <span *ngIf="contactForm.get('message')?.errors?.['minlength']">
+                        {{ 'FORMS.CONTACT_US.MESSAGE.ERRORS.MINLENGTH' | translate }}
+                    </span>
+                </mat-error>
+            </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button type="submit" [disabled]="contactForm.invalid">
+                {{ 'FORMS.CONTACT_US.SUBMIT_BUTTON' | translate }}
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</form>

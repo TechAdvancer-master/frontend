@@ -48,7 +48,7 @@ export class LogoComponent implements AfterViewInit {
     const width = maxX - minX;
     const height = maxY - minY;
 
-    this.viewBox = `${minX} ${minY} ${width} ${height}`;
+    this.viewBox = `${minX} ${minY - minY * 0.5} ${width} ${height}`;
   }
 
   private adjustHostHeight(): void {

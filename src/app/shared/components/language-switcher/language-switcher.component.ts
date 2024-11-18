@@ -17,18 +17,10 @@ export class LanguageSwitcherComponent {
     { code: 'es', label: 'Español' },
     { code: 'fr', label: 'Français' }
   ];
-  availableLanguages = ['en', 'es', 'fr'];
-  currentLanguage = 'en';
+  currentLanguage: string;
 
   constructor(private translateService: TranslateService) {
-    this.currentLanguage = this.translateService.currentLang; // Set default language
-  }
-
-  switchLanguage(event: Event) {
-    const target = event.target as HTMLSelectElement;
-    const lang = target.value;
-    this.translateService.use(lang);
-    this.currentLanguage = lang;
+    this.currentLanguage = this.translateService.currentLang || 'en';
   }
 
   changeLanguage(languageCode: string): void {

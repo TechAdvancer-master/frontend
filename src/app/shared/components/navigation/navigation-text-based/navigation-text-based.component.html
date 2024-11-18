@@ -1,3 +1,5 @@
 <nav>
-    <a mat-button *ngFor="let link of links" [routerLink]="link.href">{{link.label}}</a>
+    <a *ngFor="let link of links" [routerLink]="link.href" mat-button>
+        {{ link.labelKey | translate }}
+    </a>
 </nav>

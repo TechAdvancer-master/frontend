@@ -1,25 +1,35 @@
-<footer class="footer">
-  <app-logo displayMode="full" [width]="300"></app-logo>
+<footer class="footer mat-elevation-z4">
+  <!-- Logo -->
+  <div>
+    <app-logo displayMode="full" [width]="300"></app-logo>
+  </div>
+
+  <!-- Navigation -->
   <nav class="footer-nav">
-    <a *ngFor="let link of navLinks" [href]="link.href" mat-button class="nav-link">{{ link.label }}</a>
+    <app-navigation-text-based></app-navigation-text-based>
   </nav>
 
+  <!-- Contact Information -->
   <div class="contact-info">
-    <p *ngFor="let info of contactInfo">
-      <span class="info-type">{{ info.type }}:</span>
-      <span class="info-value">{{ info.value }}</span>
+    <p *ngFor="let info of contactInfo" class="contact-item">
+      <span class="info-type mat-body-2">{{ info.type }}:</span>
+      <span class="info-value mat-body-2">{{ info.value }}</span>
     </p>
   </div>
 
+  <!-- Social Media Links -->
   <div class="social-media">
     <a *ngFor="let social of socialMediaLinks" [href]="social.url" mat-icon-button class="social-link" target="_blank"
       rel="noopener noreferrer">
-      <mat-icon>{{ social.icon }}</mat-icon>
+      <mat-icon [class]="social.icon"></mat-icon>
     </a>
   </div>
 
-  <div class="footer-bottom">
+  <!-- Footer Bottom -->
+  <div class="footer-bottom mat-body-2">
     <p>&copy; 2024 TechAdvancer. All rights reserved.</p>
-    <a href="#" mat-button class="privacy-policy">Privacy Policy</a>
+    <a [routerLink]="'/privacy-policy'" mat-button class="privacy-policy">
+      {{ 'FOOTER.PRIVACY_POLICY' | translate }}
+    </a>
   </div>
 </footer>

@@ -1,0 +1,30 @@
+{
+    "FORMS": {
+      "CONTACT_US": {
+        "TITLE": "Contact Us",
+        "NAME": {
+          "LABEL": "Name",
+          "ERRORS": {
+            "REQUIRED": "Name is required.",
+            "MINLENGTH": "Name must be at least 2 characters long."
+          }
+        },
+        "EMAIL": {
+          "LABEL": "Email",
+          "ERRORS": {
+            "REQUIRED": "Email is required.",
+            "INVALID": "Enter a valid email."
+          }
+        },
+        "MESSAGE": {
+          "LABEL": "Message",
+          "ERRORS": {
+            "REQUIRED": "Message is required.",
+            "MINLENGTH": "Message must be at least 10 characters long."
+          }
+        },
+        "SUBMIT_BUTTON": "Submit"
+      }
+    }
+  }
+  

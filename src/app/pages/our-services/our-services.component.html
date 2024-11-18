@@ -1,1 +1,123 @@
-<p>our-services works!</p>
+<main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section mat-elevation-z2">
+        <div class="hero-content">
+            <h1>{{ 'SERVICES.TITLE' | translate }}</h1>
+            <p>{{ 'SERVICES.DESCRIPTION' | translate }}</p>
+        </div>
+    </section>
+
+    <!-- Service Sections -->
+    <section id="expert-connect" class="service-section mat-elevation-z1">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar class="service-icon">
+                    <img [src]="'SERVICES.EXPERT_CONNECT.ICON' | translate"
+                        [alt]="'SERVICES.EXPERT_CONNECT.ALT' | translate" />
+                </div>
+                <mat-card-title>{{ 'SERVICES.EXPERT_CONNECT.TITLE' | translate }}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>{{ 'SERVICES.EXPERT_CONNECT.LONG_DESCRIPTION' | translate }}</p>
+                <h3>{{ 'FEATURES' | translate }}</h3>
+                <ul>
+                    <li *ngFor="let feature of ('SERVICES.EXPERT_CONNECT.FEATURES' | translate)">{{ feature }}</li>
+                </ul>
+                <h3>{{ 'IDEAL_FOR' | translate }}</h3>
+                <ul>
+                    <li *ngFor="let ideal of ('SERVICES.EXPERT_CONNECT.IDEAL_FOR' | translate)">{{ ideal }}</li>
+                </ul>
+            </mat-card-content>
+        </mat-card>
+    </section>
+
+    <section id="talent-fusion" class="service-section mat-elevation-z1">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar class="service-icon">
+                    <img [src]="'SERVICES.TALENT_FUSION.ICON' | translate"
+                        [alt]="'SERVICES.TALENT_FUSION.ALT' | translate" />
+                </div>
+                <mat-card-title>{{ 'SERVICES.TALENT_FUSION.TITLE' | translate }}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>{{ 'SERVICES.TALENT_FUSION.LONG_DESCRIPTION' | translate }}</p>
+                <h3>{{ 'FEATURES' | translate }}</h3>
+                <ul>
+                    <li *ngFor="let feature of ('SERVICES.TALENT_FUSION.FEATURES' | translate)">{{ feature }}</li>
+                </ul>
+                <h3>{{ 'IDEAL_FOR' | translate }}</h3>
+                <ul>
+                    <li *ngFor="let ideal of ('SERVICES.TALENT_FUSION.IDEAL_FOR' | translate)">{{ ideal }}</li>
+                </ul>
+            </mat-card-content>
+        </mat-card>
+    </section>
+
+    <section id="skill-lab" class="service-section mat-elevation-z1">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar class="service-icon">
+                    <img [src]="'SERVICES.SKILL_LAB.ICON' | translate" [alt]="'SERVICES.SKILL_LAB.ALT' | translate" />
+                </div>
+                <mat-card-title>{{ 'SERVICES.SKILL_LAB.TITLE' | translate }}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>{{ 'SERVICES.SKILL_LAB.LONG_DESCRIPTION' | translate }}</p>
+                <h3>{{ 'FEATURES' | translate }}</h3>
+                <ul>
+                    <li *ngFor="let feature of ('SERVICES.SKILL_LAB.FEATURES' | translate)">{{ feature }}</li>
+                </ul>
+                <h3>{{ 'IDEAL_FOR' | translate }}</h3>
+                <ul>
+                    <li *ngFor="let ideal of ('SERVICES.SKILL_LAB.IDEAL_FOR' | translate)">{{ ideal }}</li>
+                </ul>
+            </mat-card-content>
+        </mat-card>
+    </section>
+
+    <section id="tech-forge" class="service-section mat-elevation-z1">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar class="service-icon">
+                    <img [src]="'SERVICES.TECH_FORGE.ICON' | translate" [alt]="'SERVICES.TECH_FORGE.ALT' | translate" />
+                </div>
+                <mat-card-title>{{ 'SERVICES.TECH_FORGE.TITLE' | translate }}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>{{ 'SERVICES.TECH_FORGE.LONG_DESCRIPTION' | translate }}</p>
+                <h3>{{ 'FEATURES' | translate }}</h3>
+                <ul>
+                    <li *ngFor="let feature of ('SERVICES.TECH_FORGE.FEATURES' | translate)">{{ feature }}</li>
+                </ul>
+                <h3>{{ 'IDEAL_FOR' | translate }}</h3>
+                <ul>
+                    <li *ngFor="let ideal of ('SERVICES.TECH_FORGE.IDEAL_FOR' | translate)">{{ ideal }}</li>
+                </ul>
+            </mat-card-content>
+        </mat-card>
+    </section>
+
+    <section id="cloud-services" class="service-section mat-elevation-z1">
+        <mat-card>
+            <mat-card-header>
+                <div mat-card-avatar class="service-icon">
+                    <img [src]="'SERVICES.CLOUD_SERVICES.ICON' | translate"
+                        [alt]="'SERVICES.CLOUD_SERVICES.ALT' | translate" />
+                </div>
+                <mat-card-title>{{ 'SERVICES.CLOUD_SERVICES.TITLE' | translate }}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>{{ 'SERVICES.CLOUD_SERVICES.LONG_DESCRIPTION' | translate }}</p>
+                <h3>{{ 'FEATURES' | translate }}</h3>
+                <ul>
+                    <li *ngFor="let feature of ('SERVICES.CLOUD_SERVICES.FEATURES' | translate)">{{ feature }}</li>
+                </ul>
+                <h3>{{ 'IDEAL_FOR' | translate }}</h3>
+                <ul>
+                    <li *ngFor="let ideal of ('SERVICES.CLOUD_SERVICES.IDEAL_FOR' | translate)">{{ ideal }}</li>
+                </ul>
+            </mat-card-content>
+        </mat-card>
+    </section>
+</main>

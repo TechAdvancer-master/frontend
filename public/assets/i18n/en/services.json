@@ -1,1 +1,122 @@
-{}
+{
+    "SERVICES": {
+      "TITLE": "Our Core Services",
+      "DESCRIPTION": "Discover our comprehensive range of services that are designed to drive your business forward.",
+      "EXPERT_CONNECT": {
+        "TITLE": "Expert Connect",
+        "DESCRIPTION": "We connect our clients with world-class specialists.",
+        "LONG_DESCRIPTION": "Expert Connect bridges the gap between businesses and top-tier experts in various domains. Whether it's AI, cloud computing, or software development, our specialists bring a wealth of experience and innovative solutions to address your unique challenges. We offer flexible engagement models to ensure the right fit for your business needs.",
+        "FEATURES": [
+          "Access to a global network of industry specialists.",
+          "Customized solutions tailored to business challenges.",
+          "Flexible consulting and advisory models."
+        ],
+        "IDEAL_FOR": [
+          "Companies needing specialized expertise for short-term projects.",
+          "Organizations seeking to innovate and solve complex problems.",
+          "Businesses looking to augment their teams with niche skills."
+        ],
+        "HREF": "services/expert-connect",
+        "ICON": "/icons/expert-connect.svg",
+        "ALT": "Expert Connect",
+        "TECH_STACK": ["AI", "Machine Learning", "Big Data", "Kubernetes", "Docker", "Java", "Python", "Node.js", "React", "Angular", "AWS", "Azure"],
+        "STATISTICS": [
+          "10,000 hours of expert consultancy provided.",
+          "300+ clients successfully supported."
+        ]
+      },
+      "TALENT_FUSION": {
+        "TITLE": "Talent Fusion",
+        "DESCRIPTION": "We secure the formation of high-performance teams.",
+        "LONG_DESCRIPTION": "Talent Fusion specializes in creating cohesive, high-performing teams tailored to meet the demands of modern business challenges. Our methodology ensures that every team member complements each other’s skills, fostering collaboration and innovation. From assembling agile development teams to building strategic units for operations, we deliver results-driven solutions.",
+        "FEATURES": [
+          "Team design and assembly tailored to project needs.",
+          "Emphasis on collaboration and synergy.",
+          "Ongoing team performance optimization."
+        ],
+        "IDEAL_FOR": [
+          "Startups scaling their teams rapidly.",
+          "Businesses transitioning to agile methodologies.",
+          "Organizations requiring specialized project teams."
+        ],
+        "HREF": "services/talent-fusion",
+        "ICON": "/icons/talent-fusion.svg",
+        "ALT": "Talent Fusion",
+        "TECH_STACK": ["Team Collaboration Tools", "Jira", "Confluence", "Slack", "Zoom", "Trello"],
+        "STATISTICS": [
+          "200+ teams assembled for large-scale projects.",
+          "98% client satisfaction in team building."
+        ]
+      },
+      "SKILL_LAB": {
+        "TITLE": "Skill Lab",
+        "DESCRIPTION": "Hands-on up-skilling and re-skilling for developers covering a wide range of technologies with diploma programs.",
+        "LONG_DESCRIPTION": "Skill Lab is your gateway to mastering a diverse array of technologies. Our intensive, hands-on labs are designed to equip developers with the skills they need to thrive in the tech industry. Participants gain practical experience in real-world scenarios, culminating in a diploma that enhances their professional credentials.",
+        "FEATURES": [
+          "Wide range of labs covering in-demand technologies.",
+          "Hands-on, project-based learning.",
+          "Diploma upon completion to boost career credentials."
+        ],
+        "IDEAL_FOR": [
+          "Developers looking to expand their technical expertise.",
+          "Teams aiming to improve their productivity through new skills.",
+          "Organizations investing in employee upskilling programs."
+        ],
+        "HREF": "services/skill-lab",
+        "ICON": "/icons/skill-lab.svg",
+        "ALT": "Skill Lab",
+        "TECH_STACK": ["React", "Angular", "Node.js", "Python", "AI", "Data Science"],
+        "STATISTICS": [
+          "500+ teams upskilled.",
+          "98% satisfaction rate among participants."
+        ]
+      },
+      "TECH_FORGE": {
+        "TITLE": "Tech-Forge",
+        "DESCRIPTION": "Certification-specific training programs for technologies like AWS, Azure, and more.",
+        "LONG_DESCRIPTION": "Tech-Forge provides specialized training for certifications in industry-leading technologies such as AWS, Azure, and Google Cloud. Our structured programs are designed to help participants achieve certification success with in-depth training, practice exams, and real-world applications.",
+        "FEATURES": [
+          "Comprehensive certification preparation.",
+          "In-depth training by industry-certified instructors.",
+          "Access to mock exams and real-world use cases."
+        ],
+        "IDEAL_FOR": [
+          "IT professionals pursuing industry-recognized certifications.",
+          "Organizations upskilling their workforce in certified technologies.",
+          "Students entering the tech industry with a focus on certifications."
+        ],
+        "HREF": "services/tech-forge",
+        "ICON": "/icons/tech-forge.svg",
+        "ALT": "Tech Forge",
+        "TECH_STACK": ["AWS Certified Solutions Architect", "Azure DevOps", "Google Cloud Certification"],
+        "STATISTICS": [
+          "200+ certifications earned through training.",
+          "95% exam pass rate among participants."
+        ]
+      },
+      "CLOUD_SERVICES": {
+        "TITLE": "Cloud Services",
+        "DESCRIPTION": "We manage multi-cloud environments.",
+        "LONG_DESCRIPTION": "Cloud Services offers end-to-end management of multi-cloud infrastructures, ensuring seamless integration, scalability, and security. Our expertise spans cloud migrations, cost optimization, and performance tuning to maximize the value of your cloud investments.",
+        "FEATURES": [
+          "Multi-cloud environment management.",
+          "Comprehensive migration and deployment solutions.",
+          "Performance optimization and cost management."
+        ],
+        "IDEAL_FOR": [
+          "Businesses migrating to the cloud for the first time.",
+          "Enterprises optimizing multi-cloud environments.",
+          "Organizations seeking robust cloud security and compliance."
+        ],
+        "HREF": "services/cloud-services",
+        "ICON": "/icons/cloud-services.svg",
+        "ALT": "Cloud Services",
+        "TECH_STACK": ["AWS", "Azure", "Google Cloud", "Kubernetes", "Docker", "Terraform"],
+        "STATISTICS": [
+          "99.9% uptime for managed cloud environments.",
+          "300+ successful cloud migrations completed."
+        ]
+      }
+    }
+  }
+  

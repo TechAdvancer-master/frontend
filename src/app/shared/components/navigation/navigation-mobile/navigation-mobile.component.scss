@@ -6,10 +6,17 @@
 .header {
   padding: 2rem 1rem;
   display: flex;
+  align-items: center;
   gap: 8px;
 
   & > *:nth-child(2) {
     margin-inline-start: auto;
+  }
+}
+
+.logo {
+  ::ng-deep svg {
+    width: 160px !important;
   }
 }
 
@@ -28,7 +35,6 @@
   
       &:hover {
         text-transform: underline;
-        // underline line color
         color: var(--dark-pink);
       }
     }

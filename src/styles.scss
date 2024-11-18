@@ -73,7 +73,7 @@
 
 
 
-html, body { height: 100%; width: 100vw; }
+html, body { height: 100%; width: 100vw; scroll-behavior: smooth; scroll-snap-align: center; }
 body {
   margin: 0;
   padding: 0;
@@ -85,8 +85,18 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
 
+main {
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid transparent;
+}   
+
 .glassmorphism {
   background: var(--glassmorphism-background) !important;
   backdrop-filter: blur(var(--glassmorphism-blur)) !important;
   box-shadow: 0 4px 6px var(--glassmorphism-background) !important;
+}
+
+.responsive-padding {
+  padding: 1rem 1rem;
 }

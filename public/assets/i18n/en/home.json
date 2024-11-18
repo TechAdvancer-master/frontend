@@ -9,39 +9,6 @@
       "DESCRIPTION": "At TechAdvancer, we believe in empowering businesses to thrive through advanced AI-driven solutions and world-class talent. From enhancing team capabilities to delivering tailored software solutions, our services are designed to foster success in every project.",
       "IMAGE_ALT": "woman ai"
     },
-    "SERVICES": {
-      "TITLE": "Our Core Services",
-      "EXPERT_CONNECT": {
-        "TITLE": "Expert Connect",
-        "DESCRIPTION": "We connect our clients with world-class specialists",
-        "HREF": "services/expert-connect",
-        "ICON": "/icons/expert-connect.svg"
-      },
-      "TALENT_FUSION": {
-        "TITLE": "Talent Fusion",
-        "DESCRIPTION": "We secure the formation of high-performance teams",
-        "HREF": "services/talent-fusion",
-        "ICON": "/icons/talent-fusion.svg"
-      },
-      "SKILL_LAB": {
-        "TITLE": "Skill Lab",
-        "DESCRIPTION": "We focus on up-skilling and re-skilling developers",
-        "HREF": "services/skill-lab",
-        "ICON": "/icons/skill-lab.svg"
-      },
-      "TECH_FORGE": {
-        "TITLE": "Tech-Forge",
-        "DESCRIPTION": "Comprehensive training programs in Front-End, Back-End",
-        "HREF": "services/tech-forge",
-        "ICON": "/icons/tech-forge.svg"
-      },
-      "CLOUD_SERVICES": {
-        "TITLE": "Cloud Services",
-        "DESCRIPTION": "We manage multi-cloud environments",
-        "HREF": "services/cloud-services",
-        "ICON": "/icons/cloud-services.svg"
-      }
-    },
     "PRODUCTS": {
       "TITLE": "Our core products",
       "DESCRIPTION": "Discover our innovative products that are transforming businesses worldwide.",
@@ -75,6 +42,7 @@
       "DESCRIPTION": "Our team of industry veterans and technology experts ensures reliable, high-quality service.",
       "IMAGE_ALT": "engineers working together",
       "KEY_TECHS": {
+        "TITLE": "Key Technologies and Expertise",
         "AI": {
           "TITLE": "AI & Machine Learning",
           "DESCRIPTION": "Advanced AI-driven tools for predictive analytics, process automation, and decision-making support."

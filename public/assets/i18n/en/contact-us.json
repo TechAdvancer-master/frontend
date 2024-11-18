@@ -1,1 +1,40 @@
-{}
+{
+    "CONTACT_US": {
+      "HERO": {
+        "TITLE": "Get in Touch with Us",
+        "DESCRIPTION": "We'd love to hear from you. Whether you have questions, feedback, or need assistance, our team is here to help!"
+      },
+      "FAQS": {
+        "TITLE": "Frequently Asked Questions",
+        "ITEMS": [
+          {
+            "QUESTION": "What are your operating hours?",
+            "ANSWER": "We are open Monday to Friday, 9:00 AM to 6:00 PM."
+          },
+          {
+            "QUESTION": "Where are you located?",
+            "ANSWER": "Our main office is located at 123 TechAdvancer Street, Suite 456, City, Country."
+          },
+          {
+            "QUESTION": "How long does it take for someone to respond?",
+            "ANSWER": "Our team strives to respond to all inquiries within 24 hours."
+          }
+        ]
+      },
+      "BUSINESS_HOURS": {
+        "TITLE": "Business Hours",
+        "DESCRIPTION": "Feel free to contact us during our operating hours:",
+        "ITEMS": [
+          { "DAY": "Monday–Friday", "HOURS": "9:00 AM – 6:00 PM" },
+          { "DAY": "Saturday", "HOURS": "10:00 AM – 2:00 PM" },
+          { "DAY": "Sunday", "HOURS": "Closed" }
+        ]
+      },
+      "PRIVACY": {
+        "TITLE": "Privacy Information",
+        "DESCRIPTION": "We value your privacy and are committed to protecting your personal data. Learn more about how we handle your information.",
+        "LINK_TEXT": "Read our Privacy Policy"
+      }
+    }
+  }
+  

@@ -1,9 +1,7 @@
 <app-banner></app-banner>
-
-<main class="main">
-
+<main>
     <section>
-        <div class="inline-padding">
+        <div class="responsive-padding">
             <h2>{{ 'HOME.PURPOSE.TITLE' | translate }}</h2>
             <p>{{ 'HOME.PURPOSE.DESCRIPTION' | translate }}</p>
         </div>
@@ -11,8 +9,8 @@
     </section>
 
     <section>
-        <div class="inline-padding">
-            <h2>{{ 'HOME.SERVICES.TITLE' | translate }}</h2>
+        <div class="responsive-padding">
+            <h2>{{ 'SERVICES.TITLE' | translate }}</h2>
             <ng-template #cardtemplate let-item>
                 <app-card-service [service]="item"></app-card-service>
             </ng-template>
@@ -21,7 +19,7 @@
     </section>
 
     <section class="products">
-        <div class="inline-padding">
+        <div class="responsive-padding">
             <h2>{{ 'HOME.PRODUCTS.TITLE' | translate }}</h2>
             <p>{{ 'HOME.PRODUCTS.DESCRIPTION' | translate }}</p>
             <div class="product-list">
@@ -31,7 +29,7 @@
     </section>
 
     <section class="choose-us">
-        <div class="inline-padding">
+        <div class="responsive-padding">
             <h2>{{ 'HOME.WHY_CHOOSE_US.TITLE' | translate }}</h2>
             <p>{{ 'HOME.WHY_CHOOSE_US.DESCRIPTION' | translate }}</p>
             <ul class="selling-points-list">
@@ -48,18 +46,19 @@
     </section>
 
     <section class="expertise-section">
-        <div class="inline-padding">
+        <div class="responsive-padding">
             <h2>{{ 'HOME.EXPERTISE.TITLE' | translate }}</h2>
             <p>{{ 'HOME.EXPERTISE.DESCRIPTION' | translate }}</p>
         </div>
         <img src="/working-room.jpg" alt="{{ 'HOME.EXPERTISE.IMAGE_ALT' | translate }}" />
         <div class="technologies">
-            <app-feature-list title="{{ 'HOME.EXPERTISE.TITLE' | translate }}" [features]="keyTechs"></app-feature-list>
+            <app-feature-list title="{{ 'HOME.EXPERTISE.KEY_TECHS.TITLE' | translate }}"
+                [features]="keyTechs"></app-feature-list>
         </div>
     </section>
 
     <section class="success-stories">
-        <div class="inline-padding">
+        <div class="responsive-padding">
             <h2>{{ 'HOME.SUCCESS_STORIES.TITLE' | translate }}</h2>
             <p>{{ 'HOME.SUCCESS_STORIES.DESCRIPTION' | translate }}</p>
             <div class="testimonials">
@@ -71,7 +70,7 @@
     </section>
 
     <section class="explore-links">
-        <div class="inline-padding">
+        <div class="responsive-padding">
             <h2>{{ 'HOME.EXPLORE_LINKS.TITLE' | translate }}</h2>
             <p>{{ 'HOME.EXPLORE_LINKS.DESCRIPTION' | translate }}</p>
             <ul class="explore-links-list">
@@ -83,7 +82,7 @@
     </section>
 
     <section class="contact-prompt">
-        <div class="inline-padding">
+        <div class="responsive-padding">
             <h2>{{ 'HOME.CONTACT_PROMPT.TITLE' | translate }}</h2>
             <p>{{ 'HOME.CONTACT_PROMPT.DESCRIPTION' | translate }}</p>
             <a href="/contact-us" class="mat-flat-button mat-primary-button">

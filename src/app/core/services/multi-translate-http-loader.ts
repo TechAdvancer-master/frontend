@@ -7,7 +7,7 @@ export class MultiTranslateHttpLoader implements TranslateLoader {
     constructor(private http: HttpClient, private prefix: string = './assets/i18n/', private suffix: string = '.json') { }
 
     getTranslation(lang: string): Observable<any> {
-        const pages = ['home', 'about-us', 'services', 'contact-us', 'shared']; // Add other page names as needed
+        const pages = ['home', 'about-us', 'services', 'contact-us', 'shared', 'forms', 'common'];
         const requests = pages.map(page => this.http.get(`${this.prefix}${lang}/${page}${this.suffix}`));
 
         return forkJoin(requests).pipe(
