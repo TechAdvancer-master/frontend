@@ -1,100 +1,70 @@
+@use 'styles/variables' as vars;
 
 // Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
-// Plus imports for other components in your app.
 @use 'styles/typography';
 @use 'styles/themes/default.theme' as techAdvancerTheme;
 
-
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once!
+// Include Angular Material core styles
 @include mat.core();
 
-
-// Include styles styles for core and each component used in your app.
-// Alternatively, you can import and @include the styles mixins for each component
-// that you are using.
 :root {
   @include mat.all-component-themes(techAdvancerTheme.$TechAdvancer-theme);
   @include mat.system-level-colors(techAdvancerTheme.$TechAdvancer-theme);
   @include mat.system-level-typography(techAdvancerTheme.$TechAdvancer-theme);
+
+  // Define CSS custom properties for consistency
+  // --very-dark-blue: #{vars.$very-dark-blue};
+  // --dark-purple: #{vars.$dark-purple};
+  // --deep-magenta: #{vars.$deep-magenta};
+  // --dark-pink: #{vars.$dark-pink};
+  // --white: #{vars.$white};
+  // --black: #{vars.$black};
+
+  // --dark-purple-to-black-radial-gradient: #{vars.$dark-purple-to-black-radial-gradient};
+  // --red-to-pink-to-purple-horizontal-gradient: #{vars.$red-to-pink-to-purple-horizontal-gradient};
+
+  // --glassmorphism-background: #{vars.$glassmorphism-background};
+  // --glassmorphism-blur: #{vars.$glassmorphism-blur};
+
+  // --border-radius-small: #{vars.$border-radius-small};
+  // --border-radius-medium: #{vars.$border-radius-medium};
+  // --border-radius-large: #{vars.$border-radius-large};
+
+  // --header-height: #{vars.$header-height-mobile};
+  // --breakpoint-mobile: #{vars.$breakpoint-sm};
+  // --breakpoint-tablet: #{vars.$breakpoint-md};
+  // --breakpoint-desktop: #{vars.$breakpoint-lg};
+  // --z-index-header: #{vars.$z-index-header};
 }
 
-// Comment out the line below if you want to use the pre-defined typography utility classes.
-// For more information: https://material.angular.io/guide/typography#using-typography-styles-in-your-application.
-// @include mat.typography-hierarchy($TechAdvancer-styles);
-
-// Comment out the line below if you want to use the deprecated `color` inputs.
-// @include mat.color-variants-backwards-compatibility($TechAdvancer-styles);
-:root {
-  --very-dark-blue: rgb(3, 6, 55); // gradientes, fondos
-  --dark-purple: rgb(60, 7, 83); // gradientes o imagenes
-  --deep-magenta: rgb(114, 4, 85); // para CTA y acentos 
-  --dark-pink: rgb(145, 10, 103); //acentos en particular para destacar información
-  --white: #ffffff;
-  --black: rgb(26, 26, 26); //main
-
-  --dark-purple-to-black-radial-gradient: radial-gradient(
-    circle,
-    var(--dark-purple) 0%,
-    var(--black) 70%
-  );
-  
-  --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
-    90deg,
-    var(--orange-red) 0%,
-    var(--dark-purple) 50%,
-    var(--dark-pink) 100%
-  );
-  
-  --pill-accent: var(--dark-purple);
-
-  // Breakpoints
-  --breakpoint-mobile: 600px;
-  --breakpoint-tablet: 960px;
-  --breakpoint-desktop: 1280px;
-
-  // Z-Index
-  --z-index-header: 1000;
-
-  //glassmorphism
-  --glassmorphism-background: rgba(255, 255, 255, 0.1);
-  --glassmorphism-blur: 8px;
-
-  // Border Radius
-  --border-radius-small: 6px;
-  --border-radius-medium: 12px;
-  --border-radius-large: 18px;
-
-  --header-height: 77.6px;
+html, body {
+  height: 100%;
+  width: 100vw;
+  scroll-behavior: smooth;
+  scroll-snap-align: center;
 }
 
-
-
-html, body { height: 100%; width: 100vw; scroll-behavior: smooth; scroll-snap-align: center; }
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--mat-tab-header-label-text-font), Roboto, "Helvetica Neue", sans-serif;
+  font-family: var(--mat-tab-header-label-text-font), Roboto, 'Helvetica Neue', sans-serif;
 }
 
-
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
 main {
-  background-color: var(--black);
-  color: var(--white);
+  background-color:vars.$black;
+  color: vars.$white;
   border: 1px solid transparent;
-}   
+}
 
 .glassmorphism {
-  background: var(--glassmorphism-background) !important;
-  backdrop-filter: blur(var(--glassmorphism-blur)) !important;
-  box-shadow: 0 4px 6px var(--glassmorphism-background) !important;
+  background: vars.$glassmorphism-background !important;
+  backdrop-filter: blur(vars.$glassmorphism-blur) !important;
+  box-shadow: 0 4px 6px vars.$glassmorphism-background !important;
 }
 
 .responsive-padding {

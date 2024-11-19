@@ -1,14 +1,14 @@
 <app-banner></app-banner>
 <main>
-    <section>
-        <div class="responsive-padding">
+    <section class="introduction">
+        <div class="responsive-padding content">
             <h2>{{ 'HOME.PURPOSE.TITLE' | translate }}</h2>
             <p>{{ 'HOME.PURPOSE.DESCRIPTION' | translate }}</p>
         </div>
         <img src="ai_woman.gif" alt="{{ 'HOME.PURPOSE.IMAGE_ALT' | translate }}" class="img" />
     </section>
 
-    <section>
+    <section class="services">
         <div class="responsive-padding">
             <h2>{{ 'SERVICES.TITLE' | translate }}</h2>
             <ng-template #cardtemplate let-item>

@@ -1,3 +1,5 @@
+@use 'variables' as vars;
+
 .hero-image {
     width: 100vw;
     aspect-ratio: 16/9;
@@ -15,7 +17,7 @@
 }
 
 .business-hours-section {
-    background-image: var(--dark-purple-to-black-radial-gradient);
+    background-image: vars.$dark-purple-to-black-radial-gradient;
     background-position: 20vw -50vw;
     background-size: 80vw 100vw;
     background-repeat: no-repeat;

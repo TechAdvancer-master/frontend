@@ -52,11 +52,11 @@ export class HomeComponent implements OnInit, OnDestroy {
   private loadPageTranslations(): void {
     this.translationService.loadPageTranslations('home').then((translations) => {
       this.products = [
-        {
-          title: translations.HOME.PRODUCTS.BUSINESS_PULSE.TITLE,
-          description: translations.HOME.PRODUCTS.BUSINESS_PULSE.DESCRIPTION,
-          href: 'products/business-pulse',
-        },
+        // {
+        //   title: translations.HOME.PRODUCTS.BUSINESS_PULSE.TITLE,
+        //   description: translations.HOME.PRODUCTS.BUSINESS_PULSE.DESCRIPTION,
+        //   href: 'products/business-pulse',
+        // },
         {
           title: translations.HOME.PRODUCTS.SMART_BOTS.TITLE,
           description: translations.HOME.PRODUCTS.SMART_BOTS.DESCRIPTION,

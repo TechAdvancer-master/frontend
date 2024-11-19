@@ -1,6 +1,8 @@
+@use 'variables' as vars;
+
 .product-card {
-    color: var(--white);
-    padding: 0.75rem;
+    color: vars.$white;
+    padding: 1.5rem 0.5rem;
     display: flex;
     gap: 0.5rem;
     flex-direction: column;

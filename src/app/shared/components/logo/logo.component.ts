@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, Input, Renderer2, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-logo',
@@ -9,7 +9,7 @@ import { AfterViewInit, Component, ElementRef, Input, Renderer2, ViewChild } fro
 })
 export class LogoComponent implements AfterViewInit {
 
-  @Input() color = "var(--white)";
+  @Input() color = "white";
   @Input() color2 = this.color;
   @Input() width = 60;
   @Input() displayMode: 'minimal' | 'full' | 'just-text' = 'minimal';
@@ -17,11 +17,9 @@ export class LogoComponent implements AfterViewInit {
 
   viewBox: string = '0 0 1353.96 366.25';
 
-  constructor(private hostElement: ElementRef, private renderer: Renderer2) { }
 
   ngAfterViewInit(): void {
     this.adjustViewBox();
-    // this.adjustHostHeight();
   }
 
   private adjustViewBox(): void {
@@ -49,17 +47,6 @@ export class LogoComponent implements AfterViewInit {
     const height = maxY - minY;
 
     this.viewBox = `${minX} ${minY - minY * 0.5} ${width} ${height}`;
-  }
-
-  private adjustHostHeight(): void {
-    const svg = this.svgElement.nativeElement;
-    const viewBoxValues = this.viewBox.split(' ').map(Number);
-    const viewBoxHeight = viewBoxValues[3];
-
-    const aspectRatio = svg.clientWidth / svg.clientHeight;
-    const calculatedHeight = viewBoxHeight / aspectRatio;
-
-    this.renderer.setStyle(this.hostElement.nativeElement, 'height', `${calculatedHeight}px`);
   }
 }
 

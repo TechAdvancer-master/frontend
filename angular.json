@@ -33,6 +33,11 @@
               },
               "src/assets/**/*"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles"
+              ]
+            },
             "styles": [
               "src/styles.scss",
               "src/assets/themes/ta.theme.css",

@@ -1,0 +1,46 @@
+// Breakpoints
+$breakpoints: (
+  sm: 425px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1920px
+) !default;
+
+// Colors
+$very-dark-blue: rgb(3, 6, 55) !default;
+$dark-purple: rgb(60, 7, 83) !default;
+$deep-magenta: rgb(114, 4, 85) !default;
+$dark-pink: rgb(145, 10, 103) !default;
+$white: #ffffff !default;
+$black: rgb(26, 26, 26) !default;
+
+// Gradients
+$dark-purple-to-black-radial-gradient: radial-gradient(
+  circle,
+  $dark-purple 0%,
+  $black 70%
+) !default;
+
+$red-to-pink-to-purple-horizontal-gradient: linear-gradient(
+  90deg,
+  $deep-magenta 0%,
+  $dark-purple 50%,
+  $dark-pink 100%
+) !default;
+
+// Glassmorphism
+$glassmorphism-background: rgba(255, 255, 255, 0.1) !default;
+$glassmorphism-blur: 8px !default;
+
+// Border Radius
+$border-radius-small: 6px !default;
+$border-radius-medium: 12px !default;
+$border-radius-large: 18px !default;
+
+// Header
+$header-height-mobile: 77.6px !default;
+$header-height-desktop: 88px !default;
+
+
+// Z-Index
+$z-index-header: 1000 !default;

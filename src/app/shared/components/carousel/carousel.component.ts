@@ -57,7 +57,7 @@ export class CarouselComponent {
 
   getTransform() {
     const slideWidth = 80; // The percentage width of each slide
-    const trackPadding = 10; // The padding on each side of the track
+    const trackPadding = 0; // The padding on each side of the track
     return `translateX(calc(-${this.activeIndex * slideWidth}% - ${trackPadding}%))`;
   }
 

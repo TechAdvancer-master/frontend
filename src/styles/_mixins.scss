@@ -1,0 +1,13 @@
+@use 'variables' as vars;
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key(vars.$breakpoints, $breakpoint) {
+    @media (min-width: map-get(vars.$breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint #{$breakpoint} not found in variables.";
+  }
+}
+
+  

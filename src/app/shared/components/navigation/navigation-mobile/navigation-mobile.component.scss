@@ -1,3 +1,5 @@
+@use 'variables' as vars;
+
 .container {
     width: 50vw;
     min-width: 300px;
@@ -28,14 +30,14 @@
   
     ::ng-deep nav a {
       margin-bottom: 0.5rem;
-      color: var(--white);
+      color: vars.$white;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.2s ease-in-out;
   
       &:hover {
         text-transform: underline;
-        color: var(--dark-pink);
+        color: vars.$dark-pink;
       }
     }
   }

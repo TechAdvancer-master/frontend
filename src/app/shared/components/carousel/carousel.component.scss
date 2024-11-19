@@ -1,3 +1,5 @@
+@use 'mixins' as mixins;
+
 .carousel {
   overflow: hidden;
   width: 100%;
@@ -10,6 +12,10 @@
   align-items: stretch;
   transition: transform 0.5s ease;
   padding: 20px 10%;
+
+  @include mixins.respond-to('lg') {
+    padding: 20px 20px;
+  }
 }
 
 .carousel-slide {
@@ -19,5 +25,9 @@
 
   & * {
     height: 100%;
+  }
+
+  @include mixins.respond-to('lg') {
+    flex: 1 0 250px;
   }
 }

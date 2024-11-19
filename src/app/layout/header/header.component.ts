@@ -7,11 +7,12 @@ import { NavigationTextBasedComponent } from '../../shared/components/navigation
 import { LogoComponent } from '../../shared/components/logo/logo.component';
 import { NavigationMobileComponent } from "../../shared/components/navigation/navigation-mobile/navigation-mobile.component";
 import { TranslateModule } from '@ngx-translate/core';
+import { LanguageSwitcherComponent } from "../../shared/components/language-switcher/language-switcher.component";
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatIconModule, MatToolbarModule, MatButtonModule, RouterLink, NavigationTextBasedComponent, LogoComponent, NavigationMobileComponent, TranslateModule],
+  imports: [MatIconModule, MatToolbarModule, MatButtonModule, RouterLink, NavigationTextBasedComponent, LogoComponent, NavigationMobileComponent, TranslateModule, LanguageSwitcherComponent],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })

@@ -1,14 +1,20 @@
+@use 'variables' as vars;
+@use 'mixins' as mixins;
+
 .banner {
-  padding: 4em 2em;
+  padding: 4rem 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: 0.5rem;
   background-image: url("/neural_network.gif");
   background-repeat: no-repeat;
-  // background-origin: content-box;
   background-size: cover;
-  color: white;
+  color: vars.$white;
+
+  @include mixins.respond-to('lg') {
+    padding: 6rem
+  }
 }
 
 

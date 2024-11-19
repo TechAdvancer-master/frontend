@@ -21,10 +21,10 @@ export class NavigationTextBasedComponent {
       href: "/services",
       labelKey: "NAVIGATION.SERVICES"
     },
-    {
-      href: "/about-us",
-      labelKey: "NAVIGATION.ABOUT_US"
-    },
+    // {
+    //   href: "/about-us",
+    //   labelKey: "NAVIGATION.ABOUT_US"
+    // },
     // {
     //   href: "/contact-us",
     //   labelKey: "NAVIGATION.CONTACT_US"
