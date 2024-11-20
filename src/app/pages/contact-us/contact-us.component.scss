@@ -1,8 +1,14 @@
 @use 'variables' as vars;
+@use 'mixins' as mixins;
 
 .hero-image {
     width: 100vw;
+    max-width: 800px;
     aspect-ratio: 16/9;
+
+    @include mixins.respond-to('lg') {
+        margin: 0 auto;
+    }
 }
 
 .contact-form {

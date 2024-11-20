@@ -44,10 +44,10 @@ export class FooterComponent implements OnInit, OnDestroy {
           type: translations['FOOTER']['CONTACT']['ADDRESS_LABEL'] || '',
           value: translations['FOOTER']['CONTACT']['ADDRESS'] || '',
         },
-        {
-          type: translations['FOOTER']['CONTACT']['PHONE_LABEL'] || '',
-          value: translations['FOOTER']['CONTACT']['PHONE'] || '',
-        },
+        // {
+        //   type: translations['FOOTER']['CONTACT']['PHONE_LABEL'] || '',
+        //   value: translations['FOOTER']['CONTACT']['PHONE'] || '',
+        // },
         {
           type: translations['FOOTER']['CONTACT']['EMAIL_LABEL'] || '',
           value: translations['FOOTER']['CONTACT']['EMAIL'] || '',
