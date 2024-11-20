@@ -1,6 +1,8 @@
+@use 'mixins' as mixins;
+
 .feature-list {
     padding: 1rem;
-  }
+}
 
 h2 {
     margin-bottom: 1.5rem;
@@ -10,4 +12,12 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+
+    @include mixins.respond-to('lg') {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+        gap: 1.5rem;
+    }
+    
 }

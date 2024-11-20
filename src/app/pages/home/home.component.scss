@@ -66,12 +66,38 @@
     background-position: 20vw -50vw;
     background-size: 80vw 100vw;
     background-repeat: no-repeat;
-}
 
+    @include mixins.respond-to('lg') {
+      h2, p {
+
+        text-align: center;
+      }
+    }
+}
 
 .expertise-section {
     img {
         width: 100%;
+    }
+
+    @include mixins.respond-to('lg') {
+        display: grid;
+        place-content: center;
+        place-items: center;
+        grid-template-areas: 'image text';
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 1.5rem 1rem;
+
+        .content {
+          grid-area: text;
+          padding: 0 0.5rem;
+        }
+
+        .img {
+          grid-area: image;
+          width: 80%;
+        }
     }
 }
 

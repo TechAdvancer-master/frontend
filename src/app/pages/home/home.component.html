@@ -32,16 +32,7 @@
         <div class="responsive-padding">
             <h2>{{ 'HOME.WHY_CHOOSE_US.TITLE' | translate }}</h2>
             <p>{{ 'HOME.WHY_CHOOSE_US.DESCRIPTION' | translate }}</p>
-            <ul class="selling-points-list">
-                <li>
-                    <strong>{{ 'HOME.WHY_CHOOSE_US.POINTS.INNOVATION_DRIVEN.TITLE' | translate }}</strong>
-                    <p>{{ 'HOME.WHY_CHOOSE_US.POINTS.INNOVATION_DRIVEN.DESCRIPTION' | translate }}</p>
-                </li>
-                <li>
-                    <strong>{{ 'HOME.WHY_CHOOSE_US.POINTS.CLIENT_CENTRIC.TITLE' | translate }}</strong>
-                    <p>{{ 'HOME.WHY_CHOOSE_US.POINTS.CLIENT_CENTRIC.DESCRIPTION' | translate }}</p>
-                </li>
-            </ul>
+            <app-feature-list title="" [features]="whyChooseUs"></app-feature-list>
         </div>
     </section>
 

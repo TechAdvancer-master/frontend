@@ -24,8 +24,6 @@
   
   .selling-points-list p {
     margin: 0.5rem 0 0;
-    white-space: normal; /* Allows text to wrap naturally */
-    overflow: visible;   /* Ensures content isn’t clipped */
+    white-space: normal;
+    overflow: visible;
   }
-  
-  

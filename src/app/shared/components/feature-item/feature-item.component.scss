@@ -1,8 +1,14 @@
 @use 'variables' as vars;
+@use 'mixins' as mixins;
 
 .feature-item {
     margin-bottom: 1rem;
     padding: 1rem;
+    max-width: 320px;
+
+    @include mixins.respond-to('lg') {
+       padding-block: 2rem ;
+    }
 }
 
 mat-card-title {
