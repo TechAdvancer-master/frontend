@@ -1,0 +1,46 @@
+$main-cyan: #17a2b8;
+$secondary-gray: #6c757d;
+
+.item-container {
+  display: grid;
+  gap: 12px;
+  align-items: flex-start;
+  grid-template-columns: 45px 1fr;
+  grid-template-areas: 'avatar text';
+  background-color: rgba($secondary-gray, 0.5);
+  border-radius: 8px;
+  padding: 0.25rem 1rem;
+  width: 100%;
+  &.reverse {
+    justify-items: flex-end;
+    grid-template-columns: 1fr 45px;
+    grid-template-areas: 'text avatar';
+    border: 1px solid rgba($main-cyan, 0.25);
+    background-color: transparent;
+  }
+}
+
+.picture {
+  grid-area: avatar;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  overflow: hidden;
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+  &.reverse {
+    border-color: $main-cyan;
+    padding: 4px;
+  }
+}
+
+.query {
+  grid-area: text;
+  align-self: center;
+  & p {
+    margin: 0;
+  }
+}

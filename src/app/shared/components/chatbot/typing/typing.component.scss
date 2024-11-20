@@ -1,0 +1,34 @@
+$main-blue: #007bff;
+
+.typing-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  color: $main-blue;
+  margin-block-end: auto;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+    margin-block-end: 6px;
+  }
+  50% {
+    opacity: 1;
+    margin-block-end: 4px;
+  }
+  100% {
+    opacity: 0;
+    margin-block-end: 6px;
+  }
+}
+
+.dot {
+  animation: blink 0.9s infinite;
+  animation-fill-mode: both;
+  background-color: $main-blue;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin-block-end: 4px;
+}

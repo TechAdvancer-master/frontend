@@ -1,0 +1,6 @@
+<div class="typing-container">
+    <span class="typing-text">{{ typingText }}</span>
+    <ng-container *ngFor="let delay of delays">
+        <div class="dot" [ngStyle]="{ 'animation-delay': delay }"></div>
+    </ng-container>
+</div>

@@ -1,0 +1,8 @@
+<div class="item-container" [class.reverse]="reverse">
+    <div class="picture">
+        <img [src]="img.src" [alt]="img.alt" />
+    </div>
+    <div class="query">
+        <p [innerHtml]="query | markdown"></p>
+    </div>
+</div>
