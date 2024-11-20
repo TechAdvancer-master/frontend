@@ -23,9 +23,13 @@
     min-height: vars.$header-height-mobile;;
     background-color: vars.$black;
 
-    @include mixins.respond-to('lg') {
+    @media (min-width: 1024px) {
         min-height: vars.$header-height-desktop;
     }
+
+    // @include mixins.respond-to('lg') {
+    //     min-height: vars.$header-height-desktop;
+    // }
 }
 
 .btn-icon {
