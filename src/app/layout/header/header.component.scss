@@ -3,7 +3,7 @@
 
 .container {
     width: 100vw;
-    height: max-content;
+    height: vars.$header-height-mobile;
     position: fixed;
     top: 0;
     left: 0;
@@ -16,20 +16,17 @@
     
     @include mixins.respond-to('lg') {
         padding: 1.5rem 2.5rem;
+        height: vars.$header-height-desktop;
     }
 }
 
 .spacer {
-    min-height: vars.$header-height-mobile;;
+    min-height: vars.$header-height-mobile;
     background-color: vars.$black;
 
-    @media (min-width: 1024px) {
-        min-height: vars.$header-height-desktop;
+    @include mixins.respond-to('lg') {
+        min-height: vars.$header-height-desktop;       
     }
-
-    // @include mixins.respond-to('lg') {
-    //     min-height: vars.$header-height-desktop;
-    // }
 }
 
 .btn-icon {

@@ -12,7 +12,7 @@ import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [MatIcon, NgFor, RouterLink, TranslateModule, LogoComponent, NavigationTextBasedComponent],
+  imports: [MatIcon, NgFor, TranslateModule, LogoComponent, NavigationTextBasedComponent],
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
 })
