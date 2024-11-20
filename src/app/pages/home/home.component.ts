@@ -11,6 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { TranslationService } from '../../core/services/translation.service';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-homepage',
@@ -24,7 +25,8 @@ import { TranslationService } from '../../core/services/translation.service';
     CardProductComponent,
     MatListModule,
     CardTestimonialComponent,
-    FeatureListComponent
+    FeatureListComponent,
+    MatButtonModule
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']

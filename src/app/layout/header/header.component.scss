@@ -21,11 +21,11 @@
 }
 
 .spacer {
-    min-height: vars.$header-height-mobile;
+    height: vars.$header-height-mobile;
     background-color: vars.$black;
 
     @include mixins.respond-to('lg') {
-        min-height: vars.$header-height-desktop;       
+        height: vars.$header-height-desktop;       
     }
 }
 
