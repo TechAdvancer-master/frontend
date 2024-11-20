@@ -1,14 +1,14 @@
 <main>
     <!-- Hero Section -->
     <section id="hero" class="hero-section mat-elevation-z2">
-        <div class="hero-content">
+        <div class="hero-content" id="expert-connect">
             <h1>{{ 'SERVICES.TITLE' | translate }}</h1>
             <p>{{ 'SERVICES.DESCRIPTION' | translate }}</p>
         </div>
     </section>
 
     <!-- Service Sections -->
-    <section id="expert-connect" class="service-section mat-elevation-z1">
+    <section class="service-section mat-elevation-z1">
         <mat-card>
             <mat-card-header>
                 <div mat-card-avatar class="service-icon">
@@ -24,14 +24,14 @@
                     <li *ngFor="let feature of ('SERVICES.EXPERT_CONNECT.FEATURES' | translate)">{{ feature }}</li>
                 </ul>
                 <h3>{{ 'IDEAL_FOR' | translate }}</h3>
-                <ul>
+                <ul id="talent-fusion">
                     <li *ngFor="let ideal of ('SERVICES.EXPERT_CONNECT.IDEAL_FOR' | translate)">{{ ideal }}</li>
                 </ul>
             </mat-card-content>
         </mat-card>
     </section>
 
-    <section id="talent-fusion" class="service-section mat-elevation-z1">
+    <section class="service-section mat-elevation-z1">
         <mat-card>
             <mat-card-header>
                 <div mat-card-avatar class="service-icon">
@@ -47,14 +47,14 @@
                     <li *ngFor="let feature of ('SERVICES.TALENT_FUSION.FEATURES' | translate)">{{ feature }}</li>
                 </ul>
                 <h3>{{ 'IDEAL_FOR' | translate }}</h3>
-                <ul>
+                <ul id="skill-lab">
                     <li *ngFor="let ideal of ('SERVICES.TALENT_FUSION.IDEAL_FOR' | translate)">{{ ideal }}</li>
                 </ul>
             </mat-card-content>
         </mat-card>
     </section>
 
-    <section id="skill-lab" class="service-section mat-elevation-z1">
+    <section class="service-section mat-elevation-z1">
         <mat-card>
             <img mat-card-image src="technologies.jpg" />
             <mat-card-header>
@@ -70,14 +70,14 @@
                     <li *ngFor="let feature of ('SERVICES.SKILL_LAB.FEATURES' | translate)">{{ feature }}</li>
                 </ul>
                 <h3>{{ 'IDEAL_FOR' | translate }}</h3>
-                <ul>
+                <ul id="tech-forge">
                     <li *ngFor="let ideal of ('SERVICES.SKILL_LAB.IDEAL_FOR' | translate)">{{ ideal }}</li>
                 </ul>
             </mat-card-content>
         </mat-card>
     </section>
 
-    <section id="tech-forge" class="service-section mat-elevation-z1">
+    <section class="service-section mat-elevation-z1">
         <mat-card>
             <mat-card-header>
                 <div mat-card-avatar class="service-icon">
@@ -92,14 +92,14 @@
                     <li *ngFor="let feature of ('SERVICES.TECH_FORGE.FEATURES' | translate)">{{ feature }}</li>
                 </ul>
                 <h3>{{ 'IDEAL_FOR' | translate }}</h3>
-                <ul>
+                <ul id="cloud-services">
                     <li *ngFor="let ideal of ('SERVICES.TECH_FORGE.IDEAL_FOR' | translate)">{{ ideal }}</li>
                 </ul>
             </mat-card-content>
         </mat-card>
     </section>
 
-    <section id="cloud-services" class="service-section mat-elevation-z1">
+    <section class="service-section mat-elevation-z1">
         <mat-card>
             <mat-card-header>
                 <div mat-card-avatar class="service-icon">

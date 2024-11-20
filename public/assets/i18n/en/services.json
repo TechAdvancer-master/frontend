@@ -16,7 +16,7 @@
           "Organizations seeking to innovate and solve complex problems.",
           "Businesses looking to augment their teams with niche skills."
         ],
-        "HREF": "services/expert-connect",
+        "HREF": "/services#expert-connect",
         "ICON": "/icons/expert-connect.svg",
         "ALT": "Expert Connect",
         "TECH_STACK": ["AI", "Machine Learning", "Big Data", "Kubernetes", "Docker", "Java", "Python", "Node.js", "React", "Angular", "AWS", "Azure"],
@@ -39,7 +39,7 @@
           "Businesses transitioning to agile methodologies.",
           "Organizations requiring specialized project teams."
         ],
-        "HREF": "services/talent-fusion",
+        "HREF": "/services#talent-fusion",
         "ICON": "/icons/talent-fusion.svg",
         "ALT": "Talent Fusion",
         "TECH_STACK": ["Team Collaboration Tools", "Jira", "Confluence", "Slack", "Zoom", "Trello"],
@@ -62,7 +62,7 @@
           "Teams aiming to improve their productivity through new skills.",
           "Organizations investing in employee upskilling and reskilling programs."
         ],
-        "HREF": "services/skill-lab",
+        "HREF": "/services#skill-lab",
         "ICON": "/icons/skill-lab.svg",
         "ALT": "Skill Lab",
         "TECH_STACK": ["React", "Angular", "Node.js", "Python", "AI", "Data Science"],
@@ -85,7 +85,7 @@
           "Organizations upskilling their workforce in certified technologies.",
           "Students entering the tech industry with a focus on certifications."
         ],
-        "HREF": "services/tech-forge",
+        "HREF": "/services#tech-forge",
         "ICON": "/icons/tech-forge.svg",
         "ALT": "Tech Forge",
         "TECH_STACK": ["AWS Certified Solutions Architect", "Azure DevOps", "Google Cloud Certification"],
@@ -108,7 +108,7 @@
           "Enterprises optimizing multi-cloud environments.",
           "Organizations seeking robust cloud security and compliance."
         ],
-        "HREF": "services/cloud-services",
+        "HREF": "/services#cloud-services",
         "ICON": "/icons/cloud-services.svg",
         "ALT": "Cloud Services",
         "TECH_STACK": ["AWS", "Azure", "Google Cloud", "Kubernetes", "Docker", "Terraform"],
