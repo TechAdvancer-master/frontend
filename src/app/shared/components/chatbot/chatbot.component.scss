@@ -1,7 +1,4 @@
-/* Define your theme variables or import them */
-$main-blue: #007bff;
-$secondary-gray: #6c757d;
-$black: #000;
+@use 'variables' as vars;
 
 .chatbot-container {
   position: fixed;
@@ -26,13 +23,14 @@ $black: #000;
 
 .conversation-window {
   overflow: hidden;
-  background-color: white;
   border-radius: 0.5rem;
   padding: 1rem 2rem 2.5rem;
   width: 0px;
   height: 0px;
   max-width: 800px;
-  box-shadow: 2px 2px 10px 1px rgba($black, 0.5);
+  box-shadow: 2px 2px 10px 1px rgba(vars.$black, 0.5);
+  background-color: var(--sys-surface-container);
+  color: vars.$white;
   &.is-open {
     animation: animationWindow 0.8s ease-in-out forwards,
       animationWidthOpen 0.8s ease-in-out forwards;
@@ -48,7 +46,7 @@ $black: #000;
   justify-content: flex-end;
   padding-block: 0.5rem;
   .close-button {
-    background-color: rgba($secondary-gray, 0.5);
+    background-color: rgba(vars.$dark-pink, 0.5);
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -60,8 +58,8 @@ $black: #000;
 
 .conversation-container {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 12px;
-  padding: 0 0.5rem 1rem;
   overflow-y: auto;
   max-height: 60vh;
 }
@@ -80,19 +78,28 @@ $black: #000;
 .form-container {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 30px;
-  gap: 6px;
-  input {
+  grid-template-columns: 1fr 40px;
+  place-items: center;
+  gap: 1rem;
+
+  .input {
     appearance: none;
-    border: 1px solid $secondary-gray;
+    border: 1px solid vars.$dark-pink;
+    outline: 1px solid vars.$dark-pink;
     border-radius: 6px;
     padding: 1rem 1rem;
-    outline: 1px solid $secondary-gray;
+    color: vars.$white;
+    background-color: var(--sys-surface-container);
+    justify-self: stretch;
   }
-  .send-container {
-    background: none;
-    border: none;
-    cursor: pointer;
+
+  button {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    background-color: vars.$dark-pink;
+    color: vars.$white;
   }
 }
 
@@ -100,7 +107,6 @@ $black: #000;
   color: #ad1f1f;
 }
 
-/* Keyframes animations */
 @keyframes animationWidthOpen {
   0% {
     width: 0px;

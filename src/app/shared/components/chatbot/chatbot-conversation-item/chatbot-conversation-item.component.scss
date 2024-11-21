@@ -1,21 +1,27 @@
-$main-cyan: #17a2b8;
+@use 'variables' as vars;
 $secondary-gray: #6c757d;
+
+:host {
+  display: flex;
+}
 
 .item-container {
   display: grid;
+  border: 1px solid vars.$dark-pink;
   gap: 12px;
   align-items: flex-start;
   grid-template-columns: 45px 1fr;
   grid-template-areas: 'avatar text';
-  background-color: rgba($secondary-gray, 0.5);
+  // background-color: rgba($secondary-gray, 0.5);
   border-radius: 8px;
-  padding: 0.25rem 1rem;
+  padding: 1.25rem 1rem;
   width: 100%;
+  max-width: 100%;
   &.reverse {
     justify-items: flex-end;
     grid-template-columns: 1fr 45px;
     grid-template-areas: 'text avatar';
-    border: 1px solid rgba($main-cyan, 0.25);
+    border: 1px solid rgba(vars.$dark-pink, 0.25);
     background-color: transparent;
   }
 }
@@ -32,7 +38,7 @@ $secondary-gray: #6c757d;
     height: 100%;
   }
   &.reverse {
-    border-color: $main-cyan;
+    border-color: vars.$dark-pink;
     padding: 4px;
   }
 }

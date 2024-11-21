@@ -13,29 +13,6 @@
   @include mat.system-level-colors(techAdvancerTheme.$TechAdvancer-theme);
   @include mat.system-level-typography(techAdvancerTheme.$TechAdvancer-theme);
 
-  // Define CSS custom properties for consistency
-  // --very-dark-blue: #{vars.$very-dark-blue};
-  // --dark-purple: #{vars.$dark-purple};
-  // --deep-magenta: #{vars.$deep-magenta};
-  // --dark-pink: #{vars.$dark-pink};
-  // --white: #{vars.$white};
-  // --black: #{vars.$black};
-
-  // --dark-purple-to-black-radial-gradient: #{vars.$dark-purple-to-black-radial-gradient};
-  // --red-to-pink-to-purple-horizontal-gradient: #{vars.$red-to-pink-to-purple-horizontal-gradient};
-
-  // --glassmorphism-background: #{vars.$glassmorphism-background};
-  // --glassmorphism-blur: #{vars.$glassmorphism-blur};
-
-  // --border-radius-small: #{vars.$border-radius-small};
-  // --border-radius-medium: #{vars.$border-radius-medium};
-  // --border-radius-large: #{vars.$border-radius-large};
-
-  // --header-height: #{vars.$header-height-mobile};
-  // --breakpoint-mobile: #{vars.$breakpoint-sm};
-  // --breakpoint-tablet: #{vars.$breakpoint-md};
-  // --breakpoint-desktop: #{vars.$breakpoint-lg};
-  // --z-index-header: #{vars.$z-index-header};
 }
 
 html, body {
