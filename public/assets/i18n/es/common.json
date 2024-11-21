@@ -1,8 +1,19 @@
 {
-    "FEATURES": "Características",
-    "IDEAL_FOR": "Ideal para",
-    "CONTACT_US": "Contáctanos",
-    "LEARN_MORE": "Aprender más",
-    "SUBMIT": "Enviar"
+  "FEATURES": "Características",
+  "IDEAL_FOR": "Ideal para",
+  "CONTACT_US": "Contáctanos",
+  "LEARN_MORE": "Aprender más",
+  "SUBMIT": "Enviar",
+  "CHATBOT": {
+    "INPUT_PLACEHOLDER": "Escribe tu consulta",
+    "CLOSE_BUTTON": "Cerrar",
+    "ERROR_MESSAGE": "Ocurrió un error. Por favor, inténtalo de nuevo.",
+    "CHATBOT_ALT": "Chatbot",
+    "USER_AVATAR_ALT": "Avatar del usuario",
+    "WELCOME_MESSAGE": "Hola, soy el asistente de TechAdvancer, mi nombre es Techi. \n\n ¿En qué te puedo ayudar hoy?",
+    "MESSAGE_TOO_LONG": "Tu mensaje es muy largo, favor de acortarlo."
+  },
+  "TYPING": {
+    "TEXT": "Escribiendo..."
   }
-  
+}

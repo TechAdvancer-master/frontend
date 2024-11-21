@@ -1,8 +1,19 @@
 {
-    "FEATURES": "Fonctionnalités",
-    "IDEAL_FOR": "Idéal pour",
-    "CONTACT_US": "Contactez-nous",
-    "LEARN_MORE": "En savoir plus",
-    "SUBMIT": "Soumettre"
+  "FEATURES": "Fonctionnalités",
+  "IDEAL_FOR": "Idéal pour",
+  "CONTACT_US": "Contactez-nous",
+  "LEARN_MORE": "En savoir plus",
+  "SUBMIT": "Soumettre",
+  "CHATBOT": {
+    "INPUT_PLACEHOLDER": "Saisissez votre question",
+    "CLOSE_BUTTON": "Fermer",
+    "ERROR_MESSAGE": "Une erreur s'est produite. Veuillez réessayer.",
+    "CHATBOT_ALT": "Chatbot",
+    "USER_AVATAR_ALT": "Avatar utilisateur",
+    "WELCOME_MESSAGE": "Bonjour, je suis l'assistant de TechAdvancer, je m'appelle Techi. \n\n Comment puis-je vous aider aujourd'hui ?",
+    "MESSAGE_TOO_LONG": "Votre message est trop long, veuillez le raccourcir."
+  },
+  "TYPING": {
+    "TEXT": "En train d'écrire..."
   }
-  
+}

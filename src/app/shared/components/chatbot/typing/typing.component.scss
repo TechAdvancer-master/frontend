@@ -1,10 +1,10 @@
-$main-blue: #007bff;
+@use 'variables' as vars;
 
 .typing-container {
   display: flex;
   align-items: flex-end;
   gap: 2px;
-  color: $main-blue;
+  color: vars.$dark-pink;
   margin-block-end: auto;
 }
 
@@ -26,7 +26,7 @@ $main-blue: #007bff;
 .dot {
   animation: blink 0.9s infinite;
   animation-fill-mode: both;
-  background-color: $main-blue;
+  background-color: vars.$dark-pink;;
   width: 4px;
   height: 4px;
   border-radius: 50%;

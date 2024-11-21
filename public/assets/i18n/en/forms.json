@@ -1,30 +1,35 @@
 {
-    "FORMS": {
-      "CONTACT_US": {
-        "TITLE": "Contact Us",
-        "NAME": {
-          "LABEL": "Name",
-          "ERRORS": {
-            "REQUIRED": "Name is required.",
-            "MINLENGTH": "Name must be at least 2 characters long."
-          }
+  "FORMS": {
+    "CONTACT_US": {
+      "TITLE": "Contact Us",
+      "NAME": {
+        "LABEL": "Name",
+        "ERRORS": {
+          "REQUIRED": "Name is required.",
+          "MINLENGTH": "Name must be at least 2 characters long."
+        }
+      },
+      "EMAIL": {
+        "LABEL": "Email",
+        "ERRORS": {
+          "REQUIRED": "Email is required.",
+          "INVALID": "Enter a valid email."
         },
-        "EMAIL": {
-          "LABEL": "Email",
-          "ERRORS": {
-            "REQUIRED": "Email is required.",
-            "INVALID": "Enter a valid email."
-          }
-        },
-        "MESSAGE": {
-          "LABEL": "Message",
-          "ERRORS": {
-            "REQUIRED": "Message is required.",
-            "MINLENGTH": "Message must be at least 10 characters long."
-          }
-        },
-        "SUBMIT_BUTTON": "Submit"
+        "SUBJECT": "Contact Us Message from {{ name }}"
+      },
+      "MESSAGE": {
+        "LABEL": "Message",
+        "ERRORS": {
+          "REQUIRED": "Message is required.",
+          "MINLENGTH": "Message must be at least 10 characters long."
+        }
+      },
+      "SUBMIT": {
+        "BUTTON": "Submit",
+        "SUCCESS": "Your message has been sent successfully!",
+        "ERROR": "An error occurred while sending your message. Please try again later.",
+        "INVALID": "The form is invalid. Please check the fields and try again."
       }
     }
   }
-  
+}

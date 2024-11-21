@@ -1,30 +1,32 @@
 <div class="chatbot-container" [class.is-open]="isChatOpen">
     <div class="chatbot-image-container" [class.is-open]="isChatOpen" (click)="handleToggleWindow()">
-        <img src="/chatbot.png" alt="chatbot" width="69" height="87" />
+        <img src="/chatbot.png" [alt]="'CHATBOT.CHATBOT_ALT' | translate" width="69" height="87" />
     </div>
 
     <div class="conversation-window" [class.is-open]="isChatOpen">
         <div class="window-header">
-            <span class="close-button" (click)="isChatOpen = false">X</span>
+            <span class="close-button" (click)="isChatOpen = false">X
+            </span>
         </div>
         <div>
             <div class="conversation-container" #conversationWindow>
                 <ng-container *ngFor="let item of conversation">
                     <app-chatbot-conversation-item [query]="item.message" [img]="{
-                src: item.agent === 'user' ? '/avatar.svg' : '/chatbot.png',
-                alt: 'chatbot'
-              }" [reverse]="item.agent === 'user'"></app-chatbot-conversation-item>
+                            src: item.agent === 'user' ? '/avatar.svg' : '/chatbot.png',
+                            alt: item.agent === 'user' ? ('CHATBOT.USER_AVATAR_ALT' | translate) : ('CHATBOT.CHATBOT_ALT' | translate)
+                        }" [reverse]="item.agent === 'user'">
+                    </app-chatbot-conversation-item>
                 </ng-container>
 
                 <div class="info-container" [class.loading]="loading">
                     <app-typing *ngIf="loading"></app-typing>
-                    <span class="error-message" *ngIf="error">{{ error }}</span>
+                    <span class="error-message" *ngIf="error">{{ 'CHATBOT.ERROR_MESSAGE' | translate }}</span>
                 </div>
             </div>
 
             <form (submit)="handleSubmit()" class="form-container" [formGroup]="queryForm">
-                <input class="input" placeholder="Escribe tu consulta" (keydown)="handleKeyDown($event)"
-                    (input)="handleInputChange($event)" formControlName="userQuery" />
+                <input class="input" [placeholder]="'CHATBOT.INPUT_PLACEHOLDER' | translate"
+                    (keydown)="handleKeyDown($event)" (input)="handleInputChange($event)" formControlName="userQuery" />
                 <button mat-icon-button color="primary" type="submit" aria-label="Send" [disabled]="!queryForm.valid">
                     <mat-icon>send</mat-icon>
                 </button>

@@ -1,30 +1,35 @@
 {
-    "FORMS": {
-      "CONTACT_US": {
-        "TITLE": "Nous Contacter",
-        "NAME": {
-          "LABEL": "Nom",
-          "ERRORS": {
-            "REQUIRED": "Le nom est requis.",
-            "MINLENGTH": "Le nom doit comporter au moins 2 caractères."
-          }
+  "FORMS": {
+    "CONTACT_US": {
+      "TITLE": "Contactez-nous",
+      "NAME": {
+        "LABEL": "Nom",
+        "ERRORS": {
+          "REQUIRED": "Le nom est obligatoire.",
+          "MINLENGTH": "Le nom doit contenir au moins 2 caractères."
+        }
+      },
+      "EMAIL": {
+        "LABEL": "Email",
+        "ERRORS": {
+          "REQUIRED": "L'email est obligatoire.",
+          "INVALID": "Veuillez saisir un email valide."
         },
-        "EMAIL": {
-          "LABEL": "E-mail",
-          "ERRORS": {
-            "REQUIRED": "L'e-mail est requis.",
-            "INVALID": "Entrez un e-mail valide."
-          }
-        },
-        "MESSAGE": {
-          "LABEL": "Message",
-          "ERRORS": {
-            "REQUIRED": "Le message est requis.",
-            "MINLENGTH": "Le message doit comporter au moins 10 caractères."
-          }
-        },
-        "SUBMIT_BUTTON": "Envoyer"
+        "SUBJECT": "Message de Contactez-nous de {{ name }}"
+      },
+      "MESSAGE": {
+        "LABEL": "Message",
+        "ERRORS": {
+          "REQUIRED": "Le message est obligatoire.",
+          "MINLENGTH": "Le message doit contenir au moins 10 caractères."
+        }
+      },
+      "SUBMIT": {
+        "BUTTON": "Envoyer",
+        "SUCCESS": "Votre message a été envoyé avec succès !",
+        "ERROR": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard.",
+        "INVALID": "Le formulaire n'est pas valide. Veuillez vérifier les champs et réessayer."
       }
     }
   }
-  
+}
