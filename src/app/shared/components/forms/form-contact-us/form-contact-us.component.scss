@@ -24,3 +24,15 @@
     flex-direction: column;
     gap: 1rem;
 }
+
+
+.snack-bar-success {
+    background-color: #4caf50; // Green
+    color: white;
+  }
+  
+  .snack-bar-error {
+    background-color: #f44336; // Red
+    color: white;
+  }
+  
