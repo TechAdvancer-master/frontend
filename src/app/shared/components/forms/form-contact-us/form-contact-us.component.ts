@@ -55,7 +55,7 @@ export class FormContactUsComponent {
       };
 
       this.http
-        .post('https://chatbotapi.onlinhe/send-email/', emailPayload, {
+        .post('https://chatbotapi.online/send-email/', emailPayload, {
           headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
         })
         .subscribe(
